@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>=Arab Students</title>
+    <meta name="theme-color" content="#016938" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link
+      rel="preload"
+      href="../../assets/images/home/hero-image.webp"
+      as="image"
+      fetchpriority="high"
+      type="image/webp"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/swiper/swiper-bundle.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="../../assets/vendors/swiper/swiper-bundle.min.css"
+      />
+    </noscript>
+    <style></style>
+    <link
+      rel="stylesheet"
+      media="print"
+      onload="this.media = 'all'"
+      href="../../assets/css/fonts.css"
+    />
+    <noscript>
+      <link rel="stylesheet" href="../../assets/css/fonts.css" />
+    </noscript>
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-natural-25 font-main">
+    <header class="fixed top-0 left-0 w-full z-50 header-font font-medium">
+      <div
+        class="bg-primary z-10 relative px-6 lg:px-[62px] py-4 flex items-center justify-between mx-auto shadow-lg transition-all duration-300 hover:shadow-xl"
+      >
+        <button
+          id="mobile-menu-toggle"
+          class="[@media(min-width:1341px)]:hidden text-natural-25 p-2"
+          aria-label="Toggle Menu"
+        >
+          <img
+            src="../../assets/images/shared/icons/menu-hamburger.svg"
+            width="32"
+            height="32"
+            loading="eager"
+            decoding="async"
+            alt="Menu"
+            class="w-8 h-8"
+          />
+        </button>
+        <a href="./index.html">
+          <img
+            src="../../assets/images/shared/main-logo.png"
+            width="56"
+            height="56"
+            fetchpriority="low"
+            decoding="async"
+            alt="Logo"
+          />
+        </a>
+        <nav class="hidden [@media(min-width:1341px)]:block">
+          <ul
+            class="[@media(min-width:1341px)]:flex items-center gap-[37px] text-natural-25 text-lg"
+          >
+            <li>
+              <a
+                href="../about-page/index.html"
+                class="hover:text-natural-25/70 transition-colors"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                href="../vision-2030-page/index.html"
+                class="hover:text-natural-25/70 transition-colors"
+                >الخدمات</a
+              >
+            </li>
+            <li>
+              <a
+                href="../vision-2030-page/index.html"
+                class="hover:text-natural-25/70 transition-colors"
+                >المقالات</a
+              >
+            </li>
+            <li>
+              <a
+                href="../vision-2030-page/index.html"
+                class="hover:text-natural-25/70 transition-colors"
+                >المعرض</a
+              >
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+              data-dropdown-trigger="upgrade-yourself"
+            >
+              <span>خطوات الدراسة في الخارج</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down-white.svg"
+                width="16"
+                height="16"
+                loading="eager"
+                decoding="async"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >تحديد ميزانية الدراسة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >تحديد الوجهة الدراسية</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+              data-dropdown-trigger="upgrade-yourself"
+            >
+              <span>المنح الدراسية</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down-white.svg"
+                width="16"
+                height="16"
+                loading="eager"
+                decoding="async"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >المنح الدراسية في الأردن</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+              data-dropdown-trigger="upgrade-yourself"
+            >
+              <span>اختبارات اللغة</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down-white.svg"
+                width="16"
+                height="16"
+                loading="eager"
+                decoding="async"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >اختبار آيلتس</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >اختبار التوفل</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          href="#"
+          class="bg-natural-25 hover:bg-natural-25/80 text-blue-600 px-4 py-2.5 rounded-[10px] text-xl flex items-center gap-4 group transition-colors"
+        >
+          اتصل بنا
+          <span
+            class="transform group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform ltr:scale-x-[-1]"
+          >
+            <img
+              src="../../assets/images/shared/icons/arrow-cta.svg"
+              width="20"
+              height="20"
+              loading="lazy"
+              decoding="async"
+              alt="Arrow"
+            />
+          </span>
+        </a>
+      </div>
+
+      <div
+        class="hidden [@media(min-width:1341px)]:flex items-center justify-center bg-natural-25 rounded-b-xl py-4 px-6 w-[calc(100%-18px)] mx-auto"
+      >
+        <nav class="w-full">
+          <ul
+            class="flex flex-wrap justify-between w-full items-center text-natural-800 font-medium text-lg"
+          >
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="universities"
+            >
+              <span class="leading-6">الجامعات المعتمدة</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                loading="lazy"
+                fetchpriority="low"
+                decoding="async"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >مصر</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >السعودية</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="students"
+            >
+              <span class="leading-6">الطلاب العرب</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                decoding="async"
+                fetchpriority="low"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >دليل الدراسة بالخارج للسعوديين</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >دليل الدراسة بالخارج للمصريين</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="specializations"
+            >
+              <span class="leading-6">التخصصات الدراسية</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                decoding="async"
+                fetchpriority="low"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >دراسة الطب في مصر</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >دراسة الهندسة في مصر</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="degrees"
+            >
+              <span class="leading-6">الدرجات العلمية</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                decoding="async"
+                fetchpriority="low"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >دراسة الدكتوراة في مصر</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="destinations"
+            >
+              <span class="leading-6">الدراسة في الخارج</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                decoding="async"
+                fetchpriority="low"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >تحديد ميزانية الدراسة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >تحديد الوجهة الدراسية</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >اجتياز اختبارات اللغة</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >تأشيرة الدراسة في الخارج</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >اختيار التخصص الدراسي</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="tourism"
+            >
+              <span class="leading-6">الجامعات الأجنبية</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                decoding="async"
+                fetchpriority="low"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >جامعة الشرق الأوسط</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >جامعه البترا</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >جامعة اليرموك</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >جامعة الحسين بن طلال</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >جامعة عمان العربية</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >الجامعة الهاشمية</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >جامعة الإسراء</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >الجامعة الأردنية</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="flex items-center gap-1 cursor-pointer hover:text-primary transition-colors"
+            >
+              <span class="leading-6">السياحة</span>
+            </li>
+            <li
+              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:[&>span]:text-primary transition-colors py-2"
+              data-dropdown-trigger="more"
+            >
+              <span class="leading-6">المزيد</span>
+              <img
+                src="../../assets/images/shared/icons/chevron-down.svg"
+                width="16"
+                height="16"
+                loading="lazy"
+                decoding="async"
+                alt="Chevron"
+                class="w-4 h-4 transition-transform duration-300"
+              />
+              <div
+                class="dropdown-menu absolute top-full inset-e-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+              >
+                <ul
+                  class="flex flex-col text-natural-900 divide-y [&_li_a]:block [&_li_a]:py-3 divide-natural-75"
+                >
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >التعلم عن بعد</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >ريادة الاعمال</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >احصل علي نصيحه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >المناسابات الرسميه و الاجازات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-primary transition-colors"
+                      >ابحث عن وظيفة</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section
+      data-theme="dark"
+      class="relative min-h-[678px] flex-center pt-[160px] hero-section overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-[#0E2A46C2] z-10 hero-overlay"></div>
+      <img
+        src="../../assets/images/home/hero-bg-image.webp"
+        width="1440"
+        height="960"
+        alt=""
+        loading="lazy"
+        fetchpriority="low"
+        decoding="async"
+        role="presentation"
+        class="absolute inset-0 w-full h-full object-cover aspect-3/2"
+      />
+      <img
+        src="../../assets/images/shared/pattern-bg.png"
+        width="1051"
+        height="700"
+        fetchpriority="low"
+        decoding="async"
+        role="presentation"
+        class="absolute inset-0 size-full object-cover aspect-3/2 z-10"
+        alt=""
+      />
+      <div class="max-w-4xl space-y-6 z-10 text-center">
+        <div class="flex justify-center lg:justify-end">
+          <div>
+            <h1
+              class="text-[56px] leading-[84px] font-header font-medium text-natural-25 tracking-[4%]"
+            >
+              خطوات الدراسة في <span class="text-secondary">الخارج</span> للطلاب
+              العرب
+            </h1>
+            <p
+              class="text-[22px] font-medium text-natural-25 mt-4 leading-[36.4px]"
+            >
+              رحلة دراسية عالمية تبدأ بخطة واضحة، كن معنا يكن العالم بين يديك
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      id="mobile-sidenav"
+      class="fixed inset-0 z-60 invisible transition-all duration-300"
+    >
+      <div
+        id="sidenav-overlay"
+        class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"
+      ></div>
+      <div
+        id="sidenav-content"
+        class="absolute top-0 inset-s-0 w-[80%] max-w-[320px] h-full bg-white shadow-2xl transform translate-x-full ltr:-translate-x-full transition-transform duration-300 flex flex-col pt-20 pb-8 px-6 overflow-y-auto"
+      >
+        <button
+          id="mobile-menu-close"
+          class="absolute top-6 inset-e-6 text-natural-800"
+        >
+          <img
+            src="../../assets/images/shared/icons/menu-close.svg"
+            width="32"
+            height="32"
+            loading="lazy"
+            decoding="async"
+            alt="Close"
+            class="w-8 h-8"
+          />
+        </button>
+
+        <nav class="flex flex-col gap-6 text-xl font-medium text-natural-800">
+          <a
+            href="#"
+            class="border border-secondary text-secondary text-center py-3 rounded-lg"
+            >اتصل بنا</a
+          >
+        </nav>
+      </div>
+    </div>
+    <div
+      id="social-bar"
+      class="fixed rotate-180 text-natural-25 [writing-mode:vertical-lr] items-center left-2 top-[100px] [@media(min-width:1341px)]:top-[188px] z-50 [&_img]:transition-all [&_img]:duration-500"
+    >
+      <ul
+        id="social-list"
+        class="flex items-center text-xs lg:text-sm gap-4 2xl:gap-6 text-nowrap"
+      >
+        <li>
+          <a href="#" class="flex items-center gap-1.5">
+            <span>facebook</span>
+            <img
+              src="../../assets/images/shared/icons/facebook-white-icon.svg"
+              alt="facebook"
+              role="presentation"
+              decoding="async"
+              fetchpriority="low"
+              width="18"
+              height="18"
+              class="rotate-180"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-1.5 text-sm">
+            <span>LinkedIn</span>
+            <img
+              src="../../assets/images/shared/icons/linkedIn-white-icon.svg"
+              alt="LinkedIn"
+              role="presentation"
+              decoding="async"
+              fetchpriority="low"
+              width="17"
+              height="17"
+              class="rotate-180"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-1.5 text-sm">
+            <span>Tik tok</span>
+            <img
+              src="../../assets/images/shared/icons/tiktok-white-icon.svg"
+              alt="tiktok"
+              role="presentation"
+              decoding="async"
+              fetchpriority="low"
+              width="16"
+              height="18"
+              class="rotate-180"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-1.5 text-sm">
+            <span>Instagram</span>
+            <img
+              src="../../assets/images/shared/icons/instagram-white-icon.svg"
+              alt="Instagram"
+              role="presentation"
+              decoding="async"
+              fetchpriority="low"
+              width="18"
+              height="18"
+              class="rotate-180"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center gap-1.5 text-sm">
+            <span>X</span>
+            <img
+              src="../../assets/images/shared/icons/x-white-icon.svg"
+              alt="x"
+              role="presentation"
+              decoding="async"
+              fetchpriority="low"
+              width="18"
+              height="16"
+              class="rotate-180"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="fixed inset-e-6 top-[calc(50%+240px)] -translate-y-1/2 z-30">
+      <a
+        href="#"
+        class="bg-[#67C15E] size-14 rounded-full flex-center hover:scale-110 transition-transform"
+      >
+        <img
+          src="../../assets/images/shared/icons/whatsapp-float.svg"
+          width="32"
+          height="32"
+          loading="lazy"
+          decoding="async"
+          alt="WhatsApp Support"
+        />
+      </a>
+    </div> -->
+
+    <a
+      href="#"
+      dir="rtl"
+      class="fixed text-xl flex items-center right-0 top-1/2 -translate-y-1/2 z-20 translate-x-[170px] hover:translate-x-0 transition-transform duration-300"
+    >
+      <p class="bg-natural-25 py-2.5 ps-4 pe-6">رحلتك الدراسيه الان</p>
+      <span class="bg-orange-500 -ms-2 text-natural-25 px-6 py-2.5 rounded-xl">
+        سجل من هنا
+      </span>
+    </a>
+
+    <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/mobile-optmizer.js" defer></script>
+    <script
+      src="../../assets/vendors/swiper/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"
+      defer
+    ></script>
+    <script src="../../assets/js/home.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Noto Sans Arabic";
+  font-display: swap;
+  src: url("../fonts/noto-sans-arabic/NotoSansArabic-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Noto Sans Arabic";
+  font-display: swap;
+  src: url("../fonts/noto-sans-arabic/NotoSansArabic-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Noto Sans Arabic";
+  font-display: swap;
+  src: url("../fonts/noto-sans-arabic/NotoSansArabic-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SST Arabic";
+  font-display: swap;
+  src: url("../fonts/sst-arabic/sst-arabic-roman.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SST Arabic";
+  font-display: swap;
+  src: url("../fonts/sst-arabic/sst-arabic-medium.woff2") format("woff2");
+  font-weight: 500;
+}
