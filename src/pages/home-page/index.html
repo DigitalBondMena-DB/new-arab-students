@@ -43,7 +43,41 @@
         href="../../assets/vendors/swiper/swiper-bundle.min.css"
       />
     </noscript>
-    <style></style>
+    <style>
+      .about-us-text-editor {
+        & > *:not(:last-child) {
+          margin-bottom: 3.5rem;
+        }
+        p {
+          color: var(--color-natural-700);
+          font-size: 1.75rem;
+          line-height: 2.688rem;
+        }
+        li {
+          margin-bottom: 1rem;
+          position: relative;
+          padding-inline-start: 1.8rem;
+          color: var(--color-natural-500);
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            inset-inline-start: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url("../../assets/images/shared/icons/right-marker-icon.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .swiper-pagination.testimonials-pagination {
+        
+      }
+    </style>
     <link
       rel="stylesheet"
       media="print"
@@ -581,6 +615,767 @@
         </div>
       </div>
     </section>
+    <section class="py-16 relative section-content-visibility overflow-hidden">
+      <img
+        src="../../assets/images/about/about-us-bg.png"
+        class="absolute inset-0 size-full object-cover -z-10"
+        alt=""
+        role="presentation"
+      />
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-14">
+          <div>
+            <div class="section-header text-natural-800">
+              <img
+                src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+                alt="graduated cap icon"
+                role="presentation"
+                loading="lazy"
+                fetchpriority="high"
+                decoding="async"
+                width="24"
+                height="24"
+              />
+              <h2 class="text-[40px]">من نحن</h2>
+            </div>
+            <div class="about-us-text-editor">
+              <p>
+                نساعدك على تحقيق حلم الدراسة في الخارج، ونرافقك خطوة بخطوة من
+                اختيار الوجهة حتى التخرج، نحو مستقبل واعد.
+              </p>
+              <ul>
+                <li>نرافقك حتى التخرج والحصول على الشهادة</li>
+                <li>نرشدك لاختيار الوجهة التعليمية المناسبة</li>
+                <li>ندعمك خلال جميع خطوات التقديم</li>
+              </ul>
+            </div>
+            <a
+              href="#"
+              class="text-natural-25 inline-block py-2.5 px-8 leading-6 text-xl bg-primary hover:bg-primary/80 transition-colors duration-300 rounded-[10px] mt-14"
+            >
+              اعرفنا اكثر
+            </a>
+          </div>
+          <div>
+            <div class="relative">
+              <div
+                class="bg-primary flex-center static mb-4 lg:absolute top-6 inset-e-[73px] z-10 px-6 py-4 gap-5 text-natural-25 rounded-[10px] overflow-hidden"
+              >
+                <div class="three-line-decore absolute bottom-0 -inset-e-2">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <img
+                  src="../../assets/images/shared/icons/graduated-avatar-icon.svg"
+                  width="40"
+                  height="45"
+                  loading="lazy"
+                  decoding="async"
+                  alt=""
+                  role="presentation"
+                />
+                <div>
+                  <h3 class="text-xl font-medium">طالب خريج</h3>
+                  <span class="text-[28px] font-bold" dir="ltr"> + 1931</span>
+                </div>
+              </div>
+              <img
+                src="../../assets/images/about/about-big-image.webp"
+                alt="من نحن "
+                class="object-cover rounded-[20px]"
+                width="548"
+                height="365"
+              />
+              <div class="flex">
+                <div
+                  class="rounded-[20px] border-10 border-natural-25 -mt-[100px] lg:-mt-[175px] lg:-ms-12 overflow-hidden relative w-fit"
+                >
+                  <img
+                    src="../../assets/images/about/about-small-image.webp"
+                    class="object-cover"
+                    alt="من نحن"
+                    width="332"
+                    height="254"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div
+                  class="flex items-center text-blue-600 text-sm font-medium gap-1"
+                >
+                  <img
+                    src="../../assets/images/shared/testimonials-profile.webp"
+                    width="88"
+                    height="42"
+                    alt=""
+                    role="presentation"
+                    loading="lazy"
+                  />
+                  <p>طالب مقيد <span dir="ltr">+1000</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 section-content-visibility overflow-hidden">
+      <div class="container">
+        <div
+          class="h-[530px] relative rounded-[28px] overflow-hidden flex-center"
+        >
+          <div class="inset-0 w-full z-10 absolute bg-[#0000008F]"></div>
+          <video
+            class="absolute inset-0 size-full object-cover lazy-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            loading="lazy"
+          >
+            <source
+              data-src="../../assets/vedios/panner CTA Video.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="text-natural-25 text-center z-10">
+            <h2 class="font-medium text-[40px] max-w-[1072px]">
+              ادرس فى مصر فى اكثر من جامعة و اكادمية لمعلومات اكثر الطلاب العرب
+            </h2>
+            <a
+              href="#"
+              class="py-2.5 mt-10 rounded-[10px] inline-block px-8 bg-secondary hover:bg-secondary/80 transition-colors duration300 text-natural-25"
+              >سجل بياناتك الآن</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-16 relative overflow-hidden">
+      <div class="relative z-10 text-center lg:text-right">
+        <div
+          class="flex items-center justify-between text-natural-25 bg-primary pt-16 pb-[246px] px-4 lg:px-10"
+        >
+          <div class="section-header text-natural-100">
+            <img
+              src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+              alt="graduated cap icon"
+              role="presentation"
+              loading="lazy"
+              fetchpriority="high"
+              decoding="async"
+              width="24"
+              height="24"
+            />
+            <h2 class="text-[40px]">خدماتنا</h2>
+          </div>
+          <div class="flex-center gap-4">
+            <div class="flex flex-col items-center text-xs font-medium gap-1">
+              <img
+                src="../../assets/images/shared/testimonials-profile.webp"
+                width="88"
+                height="42"
+                alt=""
+                role="presentation"
+                loading="lazy"
+              />
+              <p class="font-bold text-base">
+                طالب مقيد <span dir="ltr">+1000</span>
+              </p>
+            </div>
+            <img
+              src="../../assets/images/home/services-bg-icon.webp"
+              alt=""
+              role="presentation"
+              loading="lazy"
+              decoding="async"
+              width="134"
+              height="129"
+              data-hide-mobile
+            />
+          </div>
+        </div>
+        <div
+          data-animate
+          data-animation-direction="bottom"
+          class="swiper specializations-swiper overflow-visible pb-10 -mt-44"
+          style="padding-inline: 40px"
+        >
+          <div class="swiper-wrapper py-3">
+            <article class="swiper-slide h-auto">
+              <a
+                href="#"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+              >
+                <div
+                  class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="size-14 bg-secondary rounded-[12px] flex-center">
+                    <svg
+                      width="30"
+                      height="21"
+                      viewBox="0 0 30 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.8275 6.945V5.55C18.6335 5.142 19.4965 4.836 20.4165 4.632C21.3365 4.428 22.281 4.326 23.25 4.326C23.804 4.326 24.336 4.3615 24.846 4.4325C25.355 4.5045 25.881 4.6055 26.424 4.7355V6.0975C25.9 5.9305 25.39 5.8145 24.894 5.7495C24.396 5.6855 23.848 5.6535 23.25 5.6535C22.28 5.6535 21.334 5.7625 20.412 5.9805C19.488 6.1985 18.626 6.52 17.826 6.945M17.826 15.138V13.683C18.594 13.276 19.4525 12.9705 20.4015 12.7665C21.3505 12.5625 22.3 12.4605 23.25 12.4605C23.804 12.4605 24.336 12.4965 24.846 12.5685C25.355 12.6385 25.881 12.739 26.424 12.87V14.232C25.9 14.065 25.39 13.949 24.894 13.884C24.396 13.82 23.848 13.788 23.25 13.788C22.28 13.788 21.334 13.9055 20.412 14.1405C19.488 14.3745 18.626 14.707 17.826 15.138ZM17.826 11.07V9.6165C18.632 9.2085 19.495 8.903 20.415 8.7C21.335 8.497 22.28 8.395 23.25 8.394C23.804 8.394 24.3355 8.429 24.8445 8.499C25.3545 8.571 25.8805 8.6725 26.4225 8.8035V10.1655C25.8995 9.9975 25.3895 9.8815 24.8925 9.8175C24.3955 9.7525 23.848 9.72 23.25 9.72C22.28 9.72 21.334 9.839 20.412 10.077C19.488 10.314 18.626 10.645 17.826 11.07ZM6.75 16.614C8.06 16.614 9.3335 16.7645 10.5705 17.0655C11.8075 17.3665 13.034 17.8565 14.25 18.5355V3.819C13.167 3.046 11.974 2.466 10.671 2.079C9.366 1.693 8.059 1.5 6.75 1.5C5.85 1.5 5.062 1.5535 4.386 1.6605C3.71 1.7675 2.9595 1.9675 2.1345 2.2605C1.9045 2.3375 1.741 2.4485 1.644 2.5935C1.548 2.7375 1.5 2.896 1.5 3.069V16.5915C1.5 16.8615 1.596 17.0585 1.788 17.1825C1.98 17.3065 2.1915 17.3215 2.4225 17.2275C2.9705 17.0425 3.604 16.894 4.323 16.782C5.042 16.67 5.851 16.613 6.75 16.614ZM15.75 18.5355C16.966 17.8575 18.1925 17.3675 19.4295 17.0655C20.6665 16.7635 21.94 16.6135 23.25 16.6155C24.15 16.6155 24.959 16.671 25.677 16.782C26.395 16.893 27.0285 17.041 27.5775 17.226C27.8075 17.322 28.019 17.3075 28.212 17.1825C28.405 17.0575 28.501 16.8605 28.5 16.5915V3.069C28.5 2.896 28.452 2.742 28.356 2.607C28.26 2.473 28.0965 2.358 27.8655 2.262C27.0405 1.969 26.29 1.769 25.614 1.662C24.938 1.555 24.15 1.5005 23.25 1.4985C21.94 1.4985 20.6335 1.6915 19.3305 2.0775C18.0265 2.4645 16.833 3.0445 15.75 3.8175V18.5355ZM15 20.7105C13.78 19.8765 12.47 19.2355 11.07 18.7875C9.67 18.3395 8.23 18.1155 6.75 18.1155C5.97 18.1155 5.203 18.1805 4.449 18.3105C3.696 18.4415 2.963 18.6515 2.25 18.9405C1.706 19.1575 1.195 19.092 0.717 18.744C0.239 18.396 0 17.915 0 17.301V2.8035C0 2.4325 0.0974999 2.088 0.2925 1.77C0.4875 1.452 0.761 1.231 1.113 1.107C1.994 0.719 2.9105 0.4375 3.8625 0.2625C4.8145 0.0875003 5.777 0 6.75 0C8.22 0 9.653 0.2115 11.049 0.634501C12.447 1.0575 13.764 1.6725 15 2.4795C16.237 1.6725 17.554 1.0575 18.951 0.634501C20.348 0.2115 21.781 0 23.25 0C24.223 0 25.1855 0.0875003 26.1375 0.2625C27.0895 0.4375 28.006 0.719 28.887 1.107C29.239 1.232 29.5125 1.453 29.7075 1.77C29.9025 2.087 30 2.4315 30 2.8035V17.301C30 17.915 29.742 18.3865 29.226 18.7155C28.709 19.0435 28.159 19.099 27.576 18.882C26.883 18.612 26.174 18.417 25.449 18.297C24.725 18.176 23.992 18.1155 23.25 18.1155C21.77 18.1155 20.33 18.3395 18.93 18.7875C17.53 19.2355 16.22 19.8765 15 20.7105Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-[28px] text-start text-blue-500"> 01 </span>
+                </div>
+                <div class="mb-10">
+                  <h3
+                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                  >
+                    اختيار التخصص الدراسي
+                  </h3>
+                  <p
+                    class="line-clamp-1 text-natural-500 font-medium text-xl mt-2.5"
+                  >
+                    اختيار المسار الأكاديمي يبني مستقبل ناجح.
+                  </p>
+                </div>
+
+                <div class="px-4 pb-6 rounded-b-lg">
+                  <div
+                    class="relative w-full h-[187px] rounded-[16px] overflow-hidden"
+                  >
+                    <img
+                      src="../../assets/images/home/hero-bg-image.webp"
+                      loading="lazy"
+                      decoding="async"
+                      width="411"
+                      height="187"
+                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      alt="القطاع الهندسي"
+                    />
+                    <img
+                      src="../../assets/images/shared/pattern-bg.png"
+                      class="absolute inset-0 size-full object-cover z-10"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide h-auto">
+              <a
+                href="#"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+              >
+                <div
+                  class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="size-14 bg-secondary rounded-[12px] flex-center">
+                    <svg
+                      width="30"
+                      height="21"
+                      viewBox="0 0 30 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.8275 6.945V5.55C18.6335 5.142 19.4965 4.836 20.4165 4.632C21.3365 4.428 22.281 4.326 23.25 4.326C23.804 4.326 24.336 4.3615 24.846 4.4325C25.355 4.5045 25.881 4.6055 26.424 4.7355V6.0975C25.9 5.9305 25.39 5.8145 24.894 5.7495C24.396 5.6855 23.848 5.6535 23.25 5.6535C22.28 5.6535 21.334 5.7625 20.412 5.9805C19.488 6.1985 18.626 6.52 17.826 6.945M17.826 15.138V13.683C18.594 13.276 19.4525 12.9705 20.4015 12.7665C21.3505 12.5625 22.3 12.4605 23.25 12.4605C23.804 12.4605 24.336 12.4965 24.846 12.5685C25.355 12.6385 25.881 12.739 26.424 12.87V14.232C25.9 14.065 25.39 13.949 24.894 13.884C24.396 13.82 23.848 13.788 23.25 13.788C22.28 13.788 21.334 13.9055 20.412 14.1405C19.488 14.3745 18.626 14.707 17.826 15.138ZM17.826 11.07V9.6165C18.632 9.2085 19.495 8.903 20.415 8.7C21.335 8.497 22.28 8.395 23.25 8.394C23.804 8.394 24.3355 8.429 24.8445 8.499C25.3545 8.571 25.8805 8.6725 26.4225 8.8035V10.1655C25.8995 9.9975 25.3895 9.8815 24.8925 9.8175C24.3955 9.7525 23.848 9.72 23.25 9.72C22.28 9.72 21.334 9.839 20.412 10.077C19.488 10.314 18.626 10.645 17.826 11.07ZM6.75 16.614C8.06 16.614 9.3335 16.7645 10.5705 17.0655C11.8075 17.3665 13.034 17.8565 14.25 18.5355V3.819C13.167 3.046 11.974 2.466 10.671 2.079C9.366 1.693 8.059 1.5 6.75 1.5C5.85 1.5 5.062 1.5535 4.386 1.6605C3.71 1.7675 2.9595 1.9675 2.1345 2.2605C1.9045 2.3375 1.741 2.4485 1.644 2.5935C1.548 2.7375 1.5 2.896 1.5 3.069V16.5915C1.5 16.8615 1.596 17.0585 1.788 17.1825C1.98 17.3065 2.1915 17.3215 2.4225 17.2275C2.9705 17.0425 3.604 16.894 4.323 16.782C5.042 16.67 5.851 16.613 6.75 16.614ZM15.75 18.5355C16.966 17.8575 18.1925 17.3675 19.4295 17.0655C20.6665 16.7635 21.94 16.6135 23.25 16.6155C24.15 16.6155 24.959 16.671 25.677 16.782C26.395 16.893 27.0285 17.041 27.5775 17.226C27.8075 17.322 28.019 17.3075 28.212 17.1825C28.405 17.0575 28.501 16.8605 28.5 16.5915V3.069C28.5 2.896 28.452 2.742 28.356 2.607C28.26 2.473 28.0965 2.358 27.8655 2.262C27.0405 1.969 26.29 1.769 25.614 1.662C24.938 1.555 24.15 1.5005 23.25 1.4985C21.94 1.4985 20.6335 1.6915 19.3305 2.0775C18.0265 2.4645 16.833 3.0445 15.75 3.8175V18.5355ZM15 20.7105C13.78 19.8765 12.47 19.2355 11.07 18.7875C9.67 18.3395 8.23 18.1155 6.75 18.1155C5.97 18.1155 5.203 18.1805 4.449 18.3105C3.696 18.4415 2.963 18.6515 2.25 18.9405C1.706 19.1575 1.195 19.092 0.717 18.744C0.239 18.396 0 17.915 0 17.301V2.8035C0 2.4325 0.0974999 2.088 0.2925 1.77C0.4875 1.452 0.761 1.231 1.113 1.107C1.994 0.719 2.9105 0.4375 3.8625 0.2625C4.8145 0.0875003 5.777 0 6.75 0C8.22 0 9.653 0.2115 11.049 0.634501C12.447 1.0575 13.764 1.6725 15 2.4795C16.237 1.6725 17.554 1.0575 18.951 0.634501C20.348 0.2115 21.781 0 23.25 0C24.223 0 25.1855 0.0875003 26.1375 0.2625C27.0895 0.4375 28.006 0.719 28.887 1.107C29.239 1.232 29.5125 1.453 29.7075 1.77C29.9025 2.087 30 2.4315 30 2.8035V17.301C30 17.915 29.742 18.3865 29.226 18.7155C28.709 19.0435 28.159 19.099 27.576 18.882C26.883 18.612 26.174 18.417 25.449 18.297C24.725 18.176 23.992 18.1155 23.25 18.1155C21.77 18.1155 20.33 18.3395 18.93 18.7875C17.53 19.2355 16.22 19.8765 15 20.7105Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-[28px] text-start text-blue-500"> 01 </span>
+                </div>
+                <div class="mb-10">
+                  <h3
+                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                  >
+                    اختيار التخصص الدراسي
+                  </h3>
+                  <p
+                    class="line-clamp-1 text-natural-500 font-medium text-xl mt-2.5"
+                  >
+                    اختيار المسار الأكاديمي يبني مستقبل ناجح.
+                  </p>
+                </div>
+
+                <div class="px-4 pb-6 rounded-b-lg">
+                  <div
+                    class="relative w-full h-[187px] rounded-[16px] overflow-hidden"
+                  >
+                    <img
+                      src="../../assets/images/home/hero-bg-image.webp"
+                      loading="lazy"
+                      decoding="async"
+                      width="411"
+                      height="187"
+                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      alt="القطاع الهندسي"
+                    />
+                    <img
+                      src="../../assets/images/shared/pattern-bg.png"
+                      class="absolute inset-0 size-full object-cover z-10"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide h-auto">
+              <a
+                href="#"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+              >
+                <div
+                  class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="size-14 bg-secondary rounded-[12px] flex-center">
+                    <svg
+                      width="30"
+                      height="21"
+                      viewBox="0 0 30 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.8275 6.945V5.55C18.6335 5.142 19.4965 4.836 20.4165 4.632C21.3365 4.428 22.281 4.326 23.25 4.326C23.804 4.326 24.336 4.3615 24.846 4.4325C25.355 4.5045 25.881 4.6055 26.424 4.7355V6.0975C25.9 5.9305 25.39 5.8145 24.894 5.7495C24.396 5.6855 23.848 5.6535 23.25 5.6535C22.28 5.6535 21.334 5.7625 20.412 5.9805C19.488 6.1985 18.626 6.52 17.826 6.945M17.826 15.138V13.683C18.594 13.276 19.4525 12.9705 20.4015 12.7665C21.3505 12.5625 22.3 12.4605 23.25 12.4605C23.804 12.4605 24.336 12.4965 24.846 12.5685C25.355 12.6385 25.881 12.739 26.424 12.87V14.232C25.9 14.065 25.39 13.949 24.894 13.884C24.396 13.82 23.848 13.788 23.25 13.788C22.28 13.788 21.334 13.9055 20.412 14.1405C19.488 14.3745 18.626 14.707 17.826 15.138ZM17.826 11.07V9.6165C18.632 9.2085 19.495 8.903 20.415 8.7C21.335 8.497 22.28 8.395 23.25 8.394C23.804 8.394 24.3355 8.429 24.8445 8.499C25.3545 8.571 25.8805 8.6725 26.4225 8.8035V10.1655C25.8995 9.9975 25.3895 9.8815 24.8925 9.8175C24.3955 9.7525 23.848 9.72 23.25 9.72C22.28 9.72 21.334 9.839 20.412 10.077C19.488 10.314 18.626 10.645 17.826 11.07ZM6.75 16.614C8.06 16.614 9.3335 16.7645 10.5705 17.0655C11.8075 17.3665 13.034 17.8565 14.25 18.5355V3.819C13.167 3.046 11.974 2.466 10.671 2.079C9.366 1.693 8.059 1.5 6.75 1.5C5.85 1.5 5.062 1.5535 4.386 1.6605C3.71 1.7675 2.9595 1.9675 2.1345 2.2605C1.9045 2.3375 1.741 2.4485 1.644 2.5935C1.548 2.7375 1.5 2.896 1.5 3.069V16.5915C1.5 16.8615 1.596 17.0585 1.788 17.1825C1.98 17.3065 2.1915 17.3215 2.4225 17.2275C2.9705 17.0425 3.604 16.894 4.323 16.782C5.042 16.67 5.851 16.613 6.75 16.614ZM15.75 18.5355C16.966 17.8575 18.1925 17.3675 19.4295 17.0655C20.6665 16.7635 21.94 16.6135 23.25 16.6155C24.15 16.6155 24.959 16.671 25.677 16.782C26.395 16.893 27.0285 17.041 27.5775 17.226C27.8075 17.322 28.019 17.3075 28.212 17.1825C28.405 17.0575 28.501 16.8605 28.5 16.5915V3.069C28.5 2.896 28.452 2.742 28.356 2.607C28.26 2.473 28.0965 2.358 27.8655 2.262C27.0405 1.969 26.29 1.769 25.614 1.662C24.938 1.555 24.15 1.5005 23.25 1.4985C21.94 1.4985 20.6335 1.6915 19.3305 2.0775C18.0265 2.4645 16.833 3.0445 15.75 3.8175V18.5355ZM15 20.7105C13.78 19.8765 12.47 19.2355 11.07 18.7875C9.67 18.3395 8.23 18.1155 6.75 18.1155C5.97 18.1155 5.203 18.1805 4.449 18.3105C3.696 18.4415 2.963 18.6515 2.25 18.9405C1.706 19.1575 1.195 19.092 0.717 18.744C0.239 18.396 0 17.915 0 17.301V2.8035C0 2.4325 0.0974999 2.088 0.2925 1.77C0.4875 1.452 0.761 1.231 1.113 1.107C1.994 0.719 2.9105 0.4375 3.8625 0.2625C4.8145 0.0875003 5.777 0 6.75 0C8.22 0 9.653 0.2115 11.049 0.634501C12.447 1.0575 13.764 1.6725 15 2.4795C16.237 1.6725 17.554 1.0575 18.951 0.634501C20.348 0.2115 21.781 0 23.25 0C24.223 0 25.1855 0.0875003 26.1375 0.2625C27.0895 0.4375 28.006 0.719 28.887 1.107C29.239 1.232 29.5125 1.453 29.7075 1.77C29.9025 2.087 30 2.4315 30 2.8035V17.301C30 17.915 29.742 18.3865 29.226 18.7155C28.709 19.0435 28.159 19.099 27.576 18.882C26.883 18.612 26.174 18.417 25.449 18.297C24.725 18.176 23.992 18.1155 23.25 18.1155C21.77 18.1155 20.33 18.3395 18.93 18.7875C17.53 19.2355 16.22 19.8765 15 20.7105Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-[28px] text-start text-blue-500"> 01 </span>
+                </div>
+                <div class="mb-10">
+                  <h3
+                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                  >
+                    اختيار التخصص الدراسي
+                  </h3>
+                  <p
+                    class="line-clamp-1 text-natural-500 font-medium text-xl mt-2.5"
+                  >
+                    اختيار المسار الأكاديمي يبني مستقبل ناجح.
+                  </p>
+                </div>
+
+                <div class="px-4 pb-6 rounded-b-lg">
+                  <div
+                    class="relative w-full h-[187px] rounded-[16px] overflow-hidden"
+                  >
+                    <img
+                      src="../../assets/images/home/hero-bg-image.webp"
+                      loading="lazy"
+                      decoding="async"
+                      width="411"
+                      height="187"
+                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      alt="القطاع الهندسي"
+                    />
+                    <img
+                      src="../../assets/images/shared/pattern-bg.png"
+                      class="absolute inset-0 size-full object-cover z-10"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="swiper-slide h-auto">
+              <a
+                href="#"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+              >
+                <div
+                  class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="size-14 bg-secondary rounded-[12px] flex-center">
+                    <svg
+                      width="30"
+                      height="21"
+                      viewBox="0 0 30 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.8275 6.945V5.55C18.6335 5.142 19.4965 4.836 20.4165 4.632C21.3365 4.428 22.281 4.326 23.25 4.326C23.804 4.326 24.336 4.3615 24.846 4.4325C25.355 4.5045 25.881 4.6055 26.424 4.7355V6.0975C25.9 5.9305 25.39 5.8145 24.894 5.7495C24.396 5.6855 23.848 5.6535 23.25 5.6535C22.28 5.6535 21.334 5.7625 20.412 5.9805C19.488 6.1985 18.626 6.52 17.826 6.945M17.826 15.138V13.683C18.594 13.276 19.4525 12.9705 20.4015 12.7665C21.3505 12.5625 22.3 12.4605 23.25 12.4605C23.804 12.4605 24.336 12.4965 24.846 12.5685C25.355 12.6385 25.881 12.739 26.424 12.87V14.232C25.9 14.065 25.39 13.949 24.894 13.884C24.396 13.82 23.848 13.788 23.25 13.788C22.28 13.788 21.334 13.9055 20.412 14.1405C19.488 14.3745 18.626 14.707 17.826 15.138ZM17.826 11.07V9.6165C18.632 9.2085 19.495 8.903 20.415 8.7C21.335 8.497 22.28 8.395 23.25 8.394C23.804 8.394 24.3355 8.429 24.8445 8.499C25.3545 8.571 25.8805 8.6725 26.4225 8.8035V10.1655C25.8995 9.9975 25.3895 9.8815 24.8925 9.8175C24.3955 9.7525 23.848 9.72 23.25 9.72C22.28 9.72 21.334 9.839 20.412 10.077C19.488 10.314 18.626 10.645 17.826 11.07ZM6.75 16.614C8.06 16.614 9.3335 16.7645 10.5705 17.0655C11.8075 17.3665 13.034 17.8565 14.25 18.5355V3.819C13.167 3.046 11.974 2.466 10.671 2.079C9.366 1.693 8.059 1.5 6.75 1.5C5.85 1.5 5.062 1.5535 4.386 1.6605C3.71 1.7675 2.9595 1.9675 2.1345 2.2605C1.9045 2.3375 1.741 2.4485 1.644 2.5935C1.548 2.7375 1.5 2.896 1.5 3.069V16.5915C1.5 16.8615 1.596 17.0585 1.788 17.1825C1.98 17.3065 2.1915 17.3215 2.4225 17.2275C2.9705 17.0425 3.604 16.894 4.323 16.782C5.042 16.67 5.851 16.613 6.75 16.614ZM15.75 18.5355C16.966 17.8575 18.1925 17.3675 19.4295 17.0655C20.6665 16.7635 21.94 16.6135 23.25 16.6155C24.15 16.6155 24.959 16.671 25.677 16.782C26.395 16.893 27.0285 17.041 27.5775 17.226C27.8075 17.322 28.019 17.3075 28.212 17.1825C28.405 17.0575 28.501 16.8605 28.5 16.5915V3.069C28.5 2.896 28.452 2.742 28.356 2.607C28.26 2.473 28.0965 2.358 27.8655 2.262C27.0405 1.969 26.29 1.769 25.614 1.662C24.938 1.555 24.15 1.5005 23.25 1.4985C21.94 1.4985 20.6335 1.6915 19.3305 2.0775C18.0265 2.4645 16.833 3.0445 15.75 3.8175V18.5355ZM15 20.7105C13.78 19.8765 12.47 19.2355 11.07 18.7875C9.67 18.3395 8.23 18.1155 6.75 18.1155C5.97 18.1155 5.203 18.1805 4.449 18.3105C3.696 18.4415 2.963 18.6515 2.25 18.9405C1.706 19.1575 1.195 19.092 0.717 18.744C0.239 18.396 0 17.915 0 17.301V2.8035C0 2.4325 0.0974999 2.088 0.2925 1.77C0.4875 1.452 0.761 1.231 1.113 1.107C1.994 0.719 2.9105 0.4375 3.8625 0.2625C4.8145 0.0875003 5.777 0 6.75 0C8.22 0 9.653 0.2115 11.049 0.634501C12.447 1.0575 13.764 1.6725 15 2.4795C16.237 1.6725 17.554 1.0575 18.951 0.634501C20.348 0.2115 21.781 0 23.25 0C24.223 0 25.1855 0.0875003 26.1375 0.2625C27.0895 0.4375 28.006 0.719 28.887 1.107C29.239 1.232 29.5125 1.453 29.7075 1.77C29.9025 2.087 30 2.4315 30 2.8035V17.301C30 17.915 29.742 18.3865 29.226 18.7155C28.709 19.0435 28.159 19.099 27.576 18.882C26.883 18.612 26.174 18.417 25.449 18.297C24.725 18.176 23.992 18.1155 23.25 18.1155C21.77 18.1155 20.33 18.3395 18.93 18.7875C17.53 19.2355 16.22 19.8765 15 20.7105Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <span class="text-[28px] text-start text-blue-500"> 01 </span>
+                </div>
+                <div class="mb-10">
+                  <h3
+                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                  >
+                    اختيار التخصص الدراسي
+                  </h3>
+                  <p
+                    class="line-clamp-1 text-natural-500 font-medium text-xl mt-2.5"
+                  >
+                    اختيار المسار الأكاديمي يبني مستقبل ناجح.
+                  </p>
+                </div>
+
+                <div class="px-4 pb-6 rounded-b-lg">
+                  <div
+                    class="relative w-full h-[187px] rounded-[16px] overflow-hidden"
+                  >
+                    <img
+                      src="../../assets/images/home/hero-bg-image.webp"
+                      loading="lazy"
+                      decoding="async"
+                      width="411"
+                      height="187"
+                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      alt="القطاع الهندسي"
+                    />
+                    <img
+                      src="../../assets/images/shared/pattern-bg.png"
+                      class="absolute inset-0 size-full object-cover z-10"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-4 mt-8">
+          <button
+            type="button"
+            class="swiper-spec-prev w-12 h-12 border border-dashed border-blue-600 rounded-full flex-center hover:scale-105 transition-transform [&.swiper-button-disabled]:pointer-events-none [&.swiper-button-disabled]:brightness-0 [&.swiper-button-disabled]:invert-50"
+            aria-label="Previous slide"
+          >
+            <img
+              src="../../assets/images/shared/icons/arrow-cta.svg"
+              width="24"
+              height="24"
+              alt=""
+              role="presentation"
+              loading="lazy"
+              decoding="async"
+              class="rtl:rotate-180 pointer-events-none"
+            />
+          </button>
+          <button
+            type="button"
+            class="swiper-spec-next w-12 h-12 border border-blue-600 border-dashed rounded-full flex-center hover:scale-105 transition-transform [&.swiper-button-disabled]:pointer-events-none [&.swiper-button-disabled]:brightness-0 [&.swiper-button-disabled]:invert-50"
+            aria-label="Next slide"
+          >
+            <!-- Design: Default is orange, disabled is white/grey. -->
+            <img
+              src="../../assets/images/shared/icons/arrow-cta.svg"
+              width="24"
+              height="24"
+              alt=""
+              role="presentation"
+              loading="lazy"
+              decoding="async"
+              class="ltr:-scale-x-100"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary relative mt-[130px]">
+      <img
+        src="../../assets/images/home/Academic-alternatives-bg.webp"
+        class="absolute inset-0 size-full object-cover opacity-20"
+        alt=""
+        role="presentation"
+        loading="lazy"
+        decoding="async"
+      />
+      <div class="container py-16 relative">
+        <div>
+          <h2 class="text-natural-50 text-[40px] leading-[52px] font-medium">
+            أفضل الحلول والبدائل الأكاديمية
+          </h2>
+          <p
+            class="text-[28px] font-medium leading-[43px] text-natural-75 mt-6 max-w-[763px]"
+          >
+            ساعدنا آلاف الطلاب في إيجاد فرص دراسية مميزة في مصر، عبر خيارات
+            تعليمية تدعم طموحهم الأكاديمي.
+          </p>
+          <div class="flex items-center gap-8 mt-10">
+            <a
+              href="#"
+              class="py-2.5 rounded-[10px] inline-block px-14.5 header-font bg-secondary hover:bg-secondary/80 transition-colors duration300 text-natural-25"
+              >انضم لنا</a
+            >
+            <div class="bg-[#E6B62633] size-[72px] rounded-full flex-center">
+              <div class="bg-[#E6B62680] size-14 rounded-full flex-center">
+                <div class="bg-secondary size-10 rounded-full flex-center">
+                  <img
+                    src="../../assets/images/shared/icons/chevron-down-white.svg"
+                    width="24"
+                    height="24"
+                    class="rotate-90"
+                    alt=""
+                    role="presentation"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-e-0 bottom-0" data-hide-mobile>
+          <img
+            src="../../assets/images/home/Academic-alternatives.webp"
+            alt=""
+            width="454"
+            height="615"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="py-16 relative">
+      <img
+        src="../../assets/images/shared/icons/graduated-cap-icon-bg.webp"
+        class="absolute inset-s-[60px] top-[60px] opacity-16"
+        width="161"
+        height="102"
+        role="presentation"
+        loading="lazy"
+        alt=""
+      />
+      <img
+        src="../../assets/images/shared/icons/book-Icon-bg.webp"
+        class="absolute inset-e-[60px] bottom-[60px]"
+        width="161"
+        height="102"
+        role="presentation"
+        loading="lazy"
+        alt=""
+      />
+      <div class="container">
+        <div class="section-header text-natural-800 w-fit mx-auto items-start!">
+          <img
+            src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+            alt="graduated cap icon"
+            role="presentation"
+            loading="lazy"
+            fetchpriority="high"
+            decoding="async"
+            width="24"
+            height="24"
+            class="mt-4"
+          />
+          <div>
+            <h2 class="text-10">شركائنا</h2>
+            <p class="text-xl font-medium">تعرف على شركاء نجاحنا</p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-[112] mt-6"
+        >
+          <a href="https://digitalbondmena.com/" class="block">
+            <figure>
+              <img
+                src="../../assets/images/shared/digital-bond-red-logo.webp"
+                width="136"
+                height="104"
+                alt="Digital Bond"
+                class="mx-auto"
+              />
+            </figure>
+          </a>
+          <a href="https://ksa-students.com/ar" class="block">
+            <figure>
+              <img
+                src="../../assets/images/shared/ksa-logo.webp"
+                width="147"
+                height="105"
+                alt="Digital Bond"
+                class="mx-auto"
+              />
+            </figure>
+          </a>
+          <a href="https://edugateuae.com/ar" class="block">
+            <figure>
+              <img
+                src="../../assets/images/shared/edugate-logo.webp"
+                width="136"
+                height="49"
+                alt="Edugate"
+                class="mx-auto"
+              />
+            </figure>
+          </a>
+          <a href="https://egecmena.com/ar" class="block">
+            <figure>
+              <img
+                src="../../assets/images/shared/egec-logo.webp"
+                width="120"
+                height="135"
+                class="mx-auto"
+                alt="EGEC"
+              />
+            </figure>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="bg-primary py-24 relative overflow-hidden text-natural-25 text-center"
+    >
+      <!-- Decorative circle -->
+      <div
+        class="absolute top-1/2 -translate-y-1/2 inset-e-20 size-[254px] bg-white/10 rounded-full"
+        data-hide-mobile
+      ></div>
+
+      <div class="container relative z-10">
+        <div class="section-header text-natural-25 w-fit mx-auto mb-4">
+          <img
+            src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+            alt="icon"
+            width="24"
+            height="24"
+            loading="lazy"
+          />
+          <h2 class="text-[40px]">اراء طلابنا</h2>
+        </div>
+        <p class="text-xl font-medium mb-12">
+          تعرّف على خدماتنا الدراسية المتكاملة
+        </p>
+
+        <!-- Quote Icon -->
+        <div
+          class="bg-white size-16 rounded-full flex-center mx-auto mb-12 text-primary shadow-lg"
+        >
+          <svg
+            width="24"
+            height="20"
+            viewBox="0 0 24 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 11.4286C0 6.08571 3.85714 1.88571 9.64286 0L10.6071 1.91429C6.75 3.82857 4.82143 6.11429 4.82143 9.54286H9.64286V19.0857H0V11.4286ZM14.3571 11.4286C14.3571 6.08571 18.2143 1.88571 24 0L24.9643 1.91429C21.1071 3.82857 19.1786 6.11429 19.1786 9.54286H24V19.0857H14.3571V11.4286Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+
+        <!-- Swiper Carousel (only text changes) -->
+        <div class="swiper testimonials-swiper max-w-[940px] mx-auto">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p
+                class="text-2xl lg:text-[32px] font-medium leading-[1.6] mb-8 main-font"
+              >
+                بفضل مساعدتهم قدرت أبدأ رحلتي الدراسية في الخارج بسهولة وثقة،
+                وأنصح أي طالب بالتجربة.
+              </p>
+              <h3 class="text-2xl font-bold header-font">خالد سيد</h3>
+            </div>
+            <div class="swiper-slide">
+              <p
+                class="text-2xl lg:text-[32px] font-medium leading-[1.6] mb-8 main-font"
+              >
+                تجربة رائعة جدًا، الفريق كان متعاونًا للغاية في كل خطوة من خطوات
+                التقديم والقبول الجامعي.
+              </p>
+              <h3 class="text-2xl font-bold header-font">أحمد محمد</h3>
+            </div>
+            <div class="swiper-slide">
+              <p
+                class="text-2xl lg:text-[32px] font-medium leading-[1.6] mb-8 main-font"
+              >
+                أفضل مكتب للاستشارات التعليمية، ساعدوني في اختيار التخصص المناسب
+                لميولي وطموحاتي.
+              </p>
+              <h3 class="text-2xl font-bold header-font">سارة علي</h3>
+            </div>
+            <div class="swiper-slide">
+              <p
+                class="text-2xl lg:text-[32px] font-medium leading-[1.6] mb-8 main-font"
+              >
+                من أول تواصل لحد ما وصلت الجامعة، كل حاجة كانت منظمة وواضحة.
+                شكرًا ليكم.
+              </p>
+              <h3 class="text-2xl font-bold header-font">يوسف أحمد</h3>
+            </div>
+          </div>
+
+          <!-- Pagination Indicators -->
+          <div
+            class="swiper-pagination testimonials-pagination !static mt-12"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Floating Student Images -->
+      <img
+        src="../../assets/images/about/about-small-image.webp"
+        class="absolute top-20 inset-s-10 size-32 lg:size-44 object-cover rounded-full border-4 border-white/20"
+        data-hide-mobile
+        alt=""
+        loading="lazy"
+      />
+      <img
+        src="../../assets/images/about/about-big-image.webp"
+        class="absolute top-1/4 inset-e-10 size-28 lg:size-40 object-cover rounded-full border-4 border-white/20"
+        data-hide-mobile
+        alt=""
+        loading="lazy"
+      />
+      <img
+        src="../../assets/images/shared/testimonials-profile.webp"
+        class="absolute bottom-16 inset-s-[15%] size-20 lg:size-28 object-cover rounded-full border-4 border-white/20"
+        data-hide-mobile
+        alt=""
+        loading="lazy"
+      />
+
+      <!-- Decorative pattern -->
+      <div
+        class="three-line-decore absolute bottom-10 -inset-e-2 opacity-30 scale-[3] [&_span]:!bg-white"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
     <div
       id="mobile-sidenav"
       class="fixed inset-0 z-60 invisible transition-all duration-300"

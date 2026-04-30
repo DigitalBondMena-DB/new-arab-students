@@ -5,9 +5,15 @@
   --header-fonts: "SST Arabic", sans-serif;
   --color-primary: #22a3d1;
   --color-secondary: #e6b626;
+  --color-blue-500: #22a3d1;
   --color-blue-600: #0e2a46;
   --color-natural-25: #fff;
+  --color-natural-50: #fefeff;
   --color-natural-75: #f7fafc;
+  --color-natural-100: #eef3f7;
+  --color-natural-500: #7b8794;
+  --color-natural-700: #3e4c59;
+  --color-natural-800: #0e0e0e;
   --color-natural-900: #0e0e0e;
 }
 
@@ -109,5 +115,41 @@ h6 {
 
   .custom-scroll::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-dark);
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    h2 {
+      font-size: 1.875rem;
+      font-weight: 500;
+      @media screen and (min-width: 1024px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+@layer components {
+  .three-line-decore {
+    height: 18px;
+    width: 42px;
+    display: flex;
+    rotate: -135deg;
+    span {
+      display: block;
+      background-color: #0882ae;
+      width: 3px;
+      height: 32px;
+      border-radius: 999px;
+    }
+    span:nth-child(1) {
+      transform: translate(15px, 6px);
+    }
+    span:nth-child(2) {
+      transform: translate(10px, 0px);
+    }
+    span:nth-child(3) {
+      transform: translate(6px, -5px);
+    }
   }
 }

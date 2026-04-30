@@ -157,6 +157,46 @@ function initContactForm() {
       } else (e.preventDefault(), console.log("Form validation failed."));
     }));
 }
+function loadvideoLazy() {
+  const videos = document.querySelectorAll(".lazy-video");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const video = entry.target;
+        const source = video.querySelector("source");
+
+        source.src = source.dataset.src;
+        video.load();
+
+        observer.unobserve(video);
+      }
+    });
+  });
+
+  videos.forEach((video) => observer.observe(video));
+}
+function initTestimonialsSwiper() {
+  const el = document.querySelector(".testimonials-swiper");
+  if (!el) return;
+  new Swiper(el, {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".testimonials-pagination",
+      clickable: true,
+    },
+  });
+}
 document.addEventListener("DOMContentLoaded", () => {
-  (initSpecializationsSwiper(), initStoriesSwiper(), initContactForm());
+  (initSpecializationsSwiper(),
+    initStoriesSwiper(),
+    initTestimonialsSwiper(),
+    initContactForm(),
+    loadvideoLazy());
 });
