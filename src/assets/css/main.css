@@ -152,4 +152,18 @@ h6 {
       transform: translate(6px, -5px);
     }
   }
+
+  #social-bar {
+    transition:
+      color 0.3s ease,
+      transform 0.5s ease;
+  }
+
+  #social-bar.social-bar--light {
+    color: var(--color-natural-900) !important;
+  }
+
+  #social-bar.social-bar--light img {
+    filter: brightness(0) invert(0) !important;
+  }
 }
