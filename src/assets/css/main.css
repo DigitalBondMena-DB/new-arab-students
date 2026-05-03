@@ -67,9 +67,12 @@ h6 {
       }
     }
     #phoneInput {
-      text-align: end;
+      text-align: right;
       padding-inline-end: 100px !important;
     }
+  }
+  [dir="ltr"] #phoneInput {
+    text-align: left;
   }
   .iti--separate-dial-code .iti__selected-flag {
     background-color: transparent !important;
