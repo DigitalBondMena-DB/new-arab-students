@@ -1,5 +1,5 @@
-function initSpecializationsSwiper() {
-  const e = document.querySelector(".specializations-swiper");
+function initServicesSwiper() {
+  const e = document.querySelector(".services-swiper");
   e &&
     new Swiper(e, {
       slidesPerView: 1.2,
@@ -194,7 +194,7 @@ function initTestimonialsSwiper() {
   });
 }
 document.addEventListener("DOMContentLoaded", () => {
-  (initSpecializationsSwiper(),
+  (initServicesSwiper(),
     initStoriesSwiper(),
     initTestimonialsSwiper(),
     initContactForm(),

@@ -85,7 +85,11 @@
           border: none;
         }
       }
-      
+      .contact-us-map iframe {
+        width: 100%;
+        height: 283px;
+        border-radius: 16px;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -624,7 +628,10 @@
         </div>
       </div>
     </section>
-    <section data-sidebar-theme="light" class="py-16 relative section-content-visibility overflow-hidden">
+    <section
+      data-sidebar-theme="light"
+      class="py-16 relative section-content-visibility overflow-hidden"
+    >
       <img
         src="../../assets/images/about/about-us-bg.png"
         class="absolute inset-0 size-full object-cover -z-10"
@@ -729,7 +736,10 @@
         </div>
       </div>
     </section>
-    <section data-sidebar-theme="light" class="py-16 section-content-visibility overflow-hidden">
+    <section
+      data-sidebar-theme="light"
+      class="py-16 section-content-visibility overflow-hidden"
+    >
       <div class="container">
         <div
           class="h-[530px] relative rounded-[28px] overflow-hidden flex-center"
@@ -808,7 +818,7 @@
         <div
           data-animate
           data-animation-direction="bottom"
-          class="swiper specializations-swiper overflow-visible pb-10 -mt-44"
+          class="swiper services-swiper overflow-visible pb-10 -mt-44"
           style="padding-inline: 40px"
         >
           <div class="swiper-wrapper py-3">
@@ -1119,7 +1129,7 @@
         </div>
       </div>
     </section>
-    <section data-sidebar-theme="dark" class="bg-primary relative mt-[130px]">
+    <section data-sidebar-theme="light" class="bg-primary relative mt-[130px]">
       <img
         src="../../assets/images/home/Academic-alternatives-bg.webp"
         class="absolute inset-0 size-full object-cover opacity-20"
@@ -1173,7 +1183,10 @@
         </div>
       </div>
     </section>
-    <section data-sidebar-theme="light" class="py-16 relative">
+    <section
+      data-sidebar-theme="light"
+      class="py-16 relative section-content-visibility"
+    >
       <img
         src="../../assets/images/shared/icons/graduated-cap-icon-bg.webp"
         class="absolute inset-s-[60px] top-[60px] opacity-16"
@@ -1181,7 +1194,9 @@
         height="102"
         role="presentation"
         loading="lazy"
+        decoding="async"
         alt=""
+        data-hide-mobile
       />
       <img
         src="../../assets/images/shared/icons/book-Icon-bg.webp"
@@ -1190,10 +1205,14 @@
         height="102"
         role="presentation"
         loading="lazy"
+        decoding="async"
         alt=""
+        data-hide-mobile
       />
       <div class="container">
-        <div class="section-header text-natural-800 w-fit mx-auto items-start!">
+        <div
+          class="section-header text-natural-800 w-fit mx-auto items-start! text-center lg:text-start"
+        >
           <img
             src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
             alt="graduated cap icon"
@@ -1203,6 +1222,7 @@
             decoding="async"
             width="24"
             height="24"
+            data-hide-mobile
             class="mt-4"
           />
           <div>
@@ -1211,7 +1231,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-[112] mt-6"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-8 lg:gap-[112px] mt-6"
         >
           <a href="https://digitalbondmena.com/" class="block">
             <figure>
@@ -1260,7 +1280,6 @@
         </div>
       </div>
     </section>
-
     <!-- Testimonials Section -->
     <section
       data-sidebar-theme="dark"
@@ -1268,7 +1287,7 @@
     >
       <!-- Decorative circle -->
       <div
-        class="absolute top-1/2 -translate-y-1/2 inset-e-20 size-[254px] bg-white/10 rounded-full"
+        class="absolute top-1/2 -translate-y-1/2 inset-e-20 size-[254px] bg-blue-600 opacity-12 rounded-full"
         data-hide-mobile
       ></div>
 
@@ -1348,29 +1367,29 @@
 
           <!-- Pagination Indicators -->
           <div
-            class="swiper-pagination testimonials-pagination !static mt-12"
+            class="swiper-pagination testimonials-pagination static! mt-12"
           ></div>
         </div>
       </div>
 
       <!-- Floating Student Images -->
       <img
-        src="../../assets/images/about/about-small-image.webp"
-        class="absolute top-20 inset-s-10 size-32 lg:size-44 object-cover rounded-full border-4 border-white/20"
+        src="../../assets/images/home/students-testimonials-1.webp"
+        class="absolute top-20 inset-e-1/10 size-40.5 object-cover rounded-full"
         data-hide-mobile
         alt=""
         loading="lazy"
       />
       <img
-        src="../../assets/images/about/about-big-image.webp"
-        class="absolute top-1/4 inset-e-10 size-28 lg:size-40 object-cover rounded-full border-4 border-white/20"
+        src="../../assets/images/home/students-testimonials-2.webp"
+        class="absolute bottom-16 inset-e-1/4 size-21 object-cover rounded-full"
         data-hide-mobile
         alt=""
         loading="lazy"
       />
       <img
-        src="../../assets/images/shared/testimonials-profile.webp"
-        class="absolute bottom-16 inset-s-[15%] size-20 lg:size-28 object-cover rounded-full border-4 border-white/20"
+        src="../../assets/images/home/students-testimonials-3.webp"
+        class="absolute top-20 inset-s-1/6 size-23 object-cover rounded-full"
         data-hide-mobile
         alt=""
         loading="lazy"
@@ -1378,14 +1397,709 @@
 
       <!-- Decorative pattern -->
       <div
-        class="three-line-decore absolute bottom-10 -inset-e-2 opacity-30 scale-[3] [&_span]:!bg-white"
+        class="three-line-decore absolute -bottom-26 gap-6 rotate-135 inset-s-0 h-[300px] w-[130px] [&_span]:w-5 [&_span]:h-[226px] [&_span]:bg-blue-600 mix-blend-luminosity opacity-12"
       >
-        <span></span>
-        <span></span>
+        <span class="translate-y-20"></span>
+        <span class="translate-y-10"></span>
         <span></span>
       </div>
     </section>
+    <section class="py-24 relative overflow-hidden section-content-visibility">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div
+            class="section-header text-natural-900 w-fit items-start! text-center lg:text-start"
+          >
+            <img
+              src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+              alt="graduated cap icon"
+              role="presentation"
+              loading="lazy"
+              fetchpriority="high"
+              decoding="async"
+              width="24"
+              height="24"
+              data-hide-mobile
+              class="mt-4"
+            />
+            <div>
+              <h2 class="text-10">شركائنا</h2>
+              <p class="text-xl font-medium">تعرف على شركاء نجاحنا</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="bg-blue-500 hover:bg-blue-500/80 transition-colors duration-300 text-natural-25 rounded-[10px] py-2.5 px-8"
+          >
+            اعرف اكثر
+          </a>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
+          <article>
+            <a
+              href="#"
+              class="flex flex-col lg:flex-row gap-6 items-center blog-card p-3 group"
+            >
+              <div
+                class="blog-card-image size-[211px] shrink-0 overflow-hidden rounded-xl"
+              >
+                <img
+                  src="../../assets/images/shared/image-blog-test.png"
+                  alt="رسوم الجامعة الأمريكية في مصر للوافدين"
+                  width="211"
+                  height="211"
+                  loading="lazy"
+                  decoding="async"
+                  class="object-cover object-center block size-full group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div class="blog-card-content">
+                <div
+                  class="blog-card-header flex items-center gap-6 text-natural-500 text-sm"
+                >
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/calendar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <time datetime="1-3-2025" class="leading-[18.2px]"
+                      >1 مارس 2025</time
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/people-avatar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="leading-[18.2px]">فريق عمل ديجتال بوند</span>
+                  </div>
+                </div>
+                <div class="blog-card-body mt-6">
+                  <h3
+                    class="line-clamp-2 group-hover:text-primary transition-colors duration-300 text-natural-900 font-medium text-2xl leading-[29.66px] mb-3"
+                  >
+                    رسوم الجامعة الأمريكية في مصر للوافدين
+                  </h3>
+                  <p
+                    class="line-clamp-1 font-medium text-natural-600 text-xl leading-6"
+                  >
+                    أهم العوامل التي يبحث عنها الطلاب عند اتخاذ قرار الدراسة في
+                    مصر نظرًا لما تقدمه الجامعة من
+                  </p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="#"
+              class="flex flex-col lg:flex-row gap-6 items-center blog-card p-3 group"
+            >
+              <div
+                class="blog-card-image size-[211px] shrink-0 overflow-hidden rounded-xl"
+              >
+                <img
+                  src="../../assets/images/shared/image-blog-test.png"
+                  alt="رسوم الجامعة الأمريكية في مصر للوافدين"
+                  width="211"
+                  height="211"
+                  loading="lazy"
+                  decoding="async"
+                  class="object-cover object-center block size-full group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div class="blog-card-content">
+                <div
+                  class="blog-card-header flex items-center gap-6 text-natural-500 text-sm"
+                >
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/calendar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <time datetime="1-3-2025" class="leading-[18.2px]"
+                      >1 مارس 2025</time
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/people-avatar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="leading-[18.2px]">فريق عمل ديجتال بوند</span>
+                  </div>
+                </div>
+                <div class="blog-card-body mt-6">
+                  <h3
+                    class="line-clamp-2 group-hover:text-primary transition-colors duration-300 text-natural-900 font-medium text-2xl leading-[29.66px] mb-3"
+                  >
+                    رسوم الجامعة الأمريكية في مصر للوافدين
+                  </h3>
+                  <p
+                    class="line-clamp-1 font-medium text-natural-600 text-xl leading-6"
+                  >
+                    أهم العوامل التي يبحث عنها الطلاب عند اتخاذ قرار الدراسة في
+                    مصر نظرًا لما تقدمه الجامعة من
+                  </p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="#"
+              class="flex flex-col lg:flex-row gap-6 items-center blog-card p-3 group"
+            >
+              <div
+                class="blog-card-image size-[211px] shrink-0 overflow-hidden rounded-xl"
+              >
+                <img
+                  src="../../assets/images/shared/image-blog-test.png"
+                  alt="رسوم الجامعة الأمريكية في مصر للوافدين"
+                  width="211"
+                  height="211"
+                  loading="lazy"
+                  decoding="async"
+                  class="object-cover object-center block size-full group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div class="blog-card-content">
+                <div
+                  class="blog-card-header flex items-center gap-6 text-natural-500 text-sm"
+                >
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/calendar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <time datetime="1-3-2025" class="leading-[18.2px]"
+                      >1 مارس 2025</time
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/people-avatar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="leading-[18.2px]">فريق عمل ديجتال بوند</span>
+                  </div>
+                </div>
+                <div class="blog-card-body mt-6">
+                  <h3
+                    class="line-clamp-2 group-hover:text-primary transition-colors duration-300 text-natural-900 font-medium text-2xl leading-[29.66px] mb-3"
+                  >
+                    رسوم الجامعة الأمريكية في مصر للوافدين
+                  </h3>
+                  <p
+                    class="line-clamp-1 font-medium text-natural-600 text-xl leading-6"
+                  >
+                    أهم العوامل التي يبحث عنها الطلاب عند اتخاذ قرار الدراسة في
+                    مصر نظرًا لما تقدمه الجامعة من
+                  </p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a
+              href="#"
+              class="flex flex-col lg:flex-row gap-6 items-center blog-card p-3 group"
+            >
+              <div
+                class="blog-card-image size-[211px] shrink-0 overflow-hidden rounded-xl"
+              >
+                <img
+                  src="../../assets/images/shared/image-blog-test.png"
+                  alt="رسوم الجامعة الأمريكية في مصر للوافدين"
+                  width="211"
+                  height="211"
+                  loading="lazy"
+                  decoding="async"
+                  class="object-cover object-center block size-full group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div class="blog-card-content">
+                <div
+                  class="blog-card-header flex items-center gap-6 text-natural-500 text-sm"
+                >
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/calendar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <time datetime="1-3-2025" class="leading-[18.2px]"
+                      >1 مارس 2025</time
+                    >
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <img
+                      src="../../assets/images/shared/icons/people-avatar-icon.svg"
+                      width="14"
+                      height="14"
+                      alt=""
+                      role="presentation"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span class="leading-[18.2px]">فريق عمل ديجتال بوند</span>
+                  </div>
+                </div>
+                <div class="blog-card-body mt-6">
+                  <h3
+                    class="line-clamp-2 group-hover:text-primary transition-colors duration-300 text-natural-900 font-medium text-2xl leading-[29.66px] mb-3"
+                  >
+                    رسوم الجامعة الأمريكية في مصر للوافدين
+                  </h3>
+                  <p
+                    class="line-clamp-1 font-medium text-natural-600 text-xl leading-6"
+                  >
+                    أهم العوامل التي يبحث عنها الطلاب عند اتخاذ قرار الدراسة في
+                    مصر نظرًا لما تقدمه الجامعة من
+                  </p>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Section -->
+    <section
+      class="pt-16 section-content-visibility mb-12 pb-[120px] bg-natural-100 relative overflow-hidden"
+      id="contact-section"
+    >
+      <img
+        src="../../assets/images/contact-us/contact-us-bg.webp"
+        width="1440"
+        height="960"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        role="presentation"
+        class="absolute inset-0 size-full object-cover object-center"
+      />
+      <div class="absolute inset-0 size-full bg-blue-600 opacity-55"></div>
 
+      <div class="container px-4 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          <div
+            class="send-us-content flex flex-col justify-between h-full gap-10"
+          >
+            <div>
+              <div
+                class="section-header text-natural-25 w-fit items-start! text-center lg:text-start"
+              >
+                <img
+                  src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+                  alt="graduated cap icon"
+                  role="presentation"
+                  loading="lazy"
+                  fetchpriority="high"
+                  decoding="async"
+                  width="24"
+                  height="24"
+                  data-hide-mobile=""
+                  class="mt-4"
+                />
+                <div class="space-y-4">
+                  <h2 class="text-10">شركائنا</h2>
+                  <p
+                    class="text-2xl text-natural-50 font-medium leading-6 line-clamp-2"
+                  >
+                    تواصل معنا لتحقيق حلمك الدراسي، فريقنا جاهز لدعمك والإجابة
+                    على استفساراتك خطوة بخطوة.
+                  </p>
+                </div>
+              </div>
+              <ul class="space-y-4 text-natural-25 text-lg mt-10 ps-6">
+                <li>
+                  <a class="flex items-center gap-2" href="tel+20 01000670590">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.9999 16.9201V19.9201C22.0011 20.1986 21.944 20.4743 21.8324 20.7294C21.7209 20.9846 21.5572 21.2137 21.352 21.402C21.1468 21.5902 20.9045 21.7336 20.6407 21.8228C20.3769 21.912 20.0973 21.9452 19.8199 21.9201C16.7428 21.5857 13.7869 20.5342 11.1899 18.8501C8.77376 17.3148 6.72527 15.2663 5.18993 12.8501C3.49991 10.2413 2.44818 7.27109 2.11993 4.1801C2.09494 3.90356 2.12781 3.62486 2.21643 3.36172C2.30506 3.09859 2.4475 2.85679 2.6347 2.65172C2.82189 2.44665 3.04974 2.28281 3.30372 2.17062C3.55771 2.05843 3.83227 2.00036 4.10993 2.0001H7.10993C7.59524 1.99532 8.06572 2.16718 8.43369 2.48363C8.80166 2.80008 9.04201 3.23954 9.10993 3.7201C9.23656 4.68016 9.47138 5.62282 9.80993 6.5301C9.94448 6.88802 9.9736 7.27701 9.89384 7.65098C9.81408 8.02494 9.6288 8.36821 9.35993 8.6401L8.08993 9.9101C9.51349 12.4136 11.5864 14.4865 14.0899 15.9101L15.3599 14.6401C15.6318 14.3712 15.9751 14.1859 16.3491 14.1062C16.723 14.0264 17.112 14.0556 17.4699 14.1901C18.3772 14.5286 19.3199 14.7635 20.2799 14.8901C20.7657 14.9586 21.2093 15.2033 21.5265 15.5776C21.8436 15.9519 22.0121 16.4297 21.9999 16.9201Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span>+ 20 01000670590</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex items-center gap-2"
+                    href="mailto:info@arabstudents.com"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7M4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6C2 4.89543 2.89543 4 4 4Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span>Info@arabstudents.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-2" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+
+                    <span>القاهرة</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-us-map">
+              <div style="width: 100%">
+                <iframe
+                  loading="lazy"
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2FDigital%2BBond%2F%4030.0327989%2C31.2113871%2C17z%2Fdata%3D!3m1!4b1!4m6!3m5!1s0x145841dbdca09375%3A0xc8f0a33432ed7642!8m2!3d30.0327989!4d31.2091984!16s%252Fg%252F11pv31c2z3%3Fentry%3Dttu%26g_ep%3DEgoyMDI2MDQyOS4wIKXMDSoASAFQAw%253D%253D&amp;maptype=roadmap&amp;zoom=14"
+                  ><a href="https://www.mapsdirections.info/pl/mapa-populacji/"
+                    >kalkulator liczby ludności na mapie</a
+                  ></iframe
+                >
+              </div>
+            </div>
+          </div>
+          <div data-animate data-animation-direction="end">
+            <form
+              id="contactForm"
+              class="flex flex-col gap-6 ltr:mr-auto rtl:ml-auto max-w-[664px] bg-natural-25 border-t-6 border-t-yellow-500 rounded-[10px] py-8 px-6"
+            >
+              <!-- Name Input -->
+              <div class="form-group relative">
+                <label
+                  for="nameInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >الاسم بالكامل <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="nameInput"
+                  placeholder="الاسم بالكامل"
+                  class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500"
+                />
+                <div id="nameError" class="text-red-500 text-sm mt-1 hidden">
+                  <small class="hidden">الاسم يجب أن يكون أكثر من 3 حروف</small>
+                  <small class="hidden">الاسم لا يجب أن يحتوي على أرقام</small>
+                </div>
+              </div>
+
+              <!-- Phone Input -->
+              <div class="form-group relative">
+                <label
+                  for="phoneInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >رقم الهاتف <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="tel"
+                  id="phoneInput"
+                  class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500"
+                />
+                <input type="hidden" id="actualPhone" name="actualPhone" />
+                <div id="validMsg" class="text-red-500 text-sm mt-1 hidden">
+                  رقم الهاتف غير صالح
+                </div>
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group relative">
+                <label
+                  for="emailInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >البريد الإلكتروني <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="email"
+                  id="emailInput"
+                  placeholder="البريد الإلكتروني"
+                  class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500"
+                />
+                <div id="emailError" class="text-red-500 text-sm mt-1 hidden">
+                  البريد الالكتروني غير صالح
+                </div>
+              </div>
+
+              <!-- Message Textarea -->
+              <div class="form-group relative">
+                <label
+                  for="phoneInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >الرسالة<span class="text-red-500">*</span></label
+                >
+                <textarea
+                  id="message"
+                  placeholder="اكتب رسالتك هنا..."
+                  rows="5"
+                  class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 resize-none"
+                ></textarea>
+                <div id="messageError" class="text-red-500 text-sm mt-1 hidden">
+                  الرسالة يجب أن تكون أكثر من 10 حروف
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button
+                type="submit"
+                class="bg-secondary text-white rounded-2xl py-5 text-2xl font-header font-medium hover:bg-secondary/90 transition-all shadow-lg active:scale-95"
+              >
+                ارسل لنا
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <img
+        src="../../assets/images/shared/section-bottom-vector.webp"
+        loading="lazy"
+        decoding="async"
+        role="presentation"
+        class="absolute bottom-0 inset-x-0 w-full object-cover object-bottom translate-y-[2px]"
+        alt=""
+      />
+    </section>
+    <footer
+      class="bg-primary rounded-t-[72px] py-10 overflow-hidden text-natural-25"
+    >
+      <div
+        class="footer-header flex flex-col lg:flex-row lg:items-center gap-2"
+      >
+        <div
+          class="footer-icon bg-blue-600 rounded-e-full w-[233px] h-[119px] flex items-center ps-[78px]"
+        >
+          <img
+            src="../../assets/images/shared/main-logo.png"
+            loading="lazy"
+            decoding="async"
+            role="presentation"
+            alt=""
+            width="99"
+            height="99"
+          />
+        </div>
+        <h2 class="font-medium text-[28px] px-4 lg:px-0">
+          قم بالدراسة فى الخارج باسهل و اسرع الطرق
+        </h2>
+      </div>
+      <div class="container me-auto relative pb-6">
+        <div
+          class="flex flex-col lg:flex-row  text-center lg:text-start gap-4 lg:gap-18 mt-30"
+        >
+          <div>
+            <h3 class="text-lg font-medium">الروابط السريعه</h3>
+            <div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-18">
+              <ul class="space-y-2 text-natural-25 leading-8 font-medium mt-4">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">المقالات</a></li>
+                <li><a href="#">المعرض</a></li>
+              </ul>
+              <ul class="space-y-2 text-natural-25 leading-8 font-medium mt-4">
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">من نحن</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">المقالات</a></li>
+                <li><a href="#">المعرض</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">تواصل معنا</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+              <ul
+                class="space-y-4 text-natural-25 text-lg mt-10 flex flex-col items-center lg:items-start"
+              >
+                <li>
+                  <a class="flex items-center gap-2" href="tel+20 01000670590">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21.9999 16.9201V19.9201C22.0011 20.1986 21.944 20.4743 21.8324 20.7294C21.7209 20.9846 21.5572 21.2137 21.352 21.402C21.1468 21.5902 20.9045 21.7336 20.6407 21.8228C20.3769 21.912 20.0973 21.9452 19.8199 21.9201C16.7428 21.5857 13.7869 20.5342 11.1899 18.8501C8.77376 17.3148 6.72527 15.2663 5.18993 12.8501C3.49991 10.2413 2.44818 7.27109 2.11993 4.1801C2.09494 3.90356 2.12781 3.62486 2.21643 3.36172C2.30506 3.09859 2.4475 2.85679 2.6347 2.65172C2.82189 2.44665 3.04974 2.28281 3.30372 2.17062C3.55771 2.05843 3.83227 2.00036 4.10993 2.0001H7.10993C7.59524 1.99532 8.06572 2.16718 8.43369 2.48363C8.80166 2.80008 9.04201 3.23954 9.10993 3.7201C9.23656 4.68016 9.47138 5.62282 9.80993 6.5301C9.94448 6.88802 9.9736 7.27701 9.89384 7.65098C9.81408 8.02494 9.6288 8.36821 9.35993 8.6401L8.08993 9.9101C9.51349 12.4136 11.5864 14.4865 14.0899 15.9101L15.3599 14.6401C15.6318 14.3712 15.9751 14.1859 16.3491 14.1062C16.723 14.0264 17.112 14.0556 17.4699 14.1901C18.3772 14.5286 19.3199 14.7635 20.2799 14.8901C20.7657 14.9586 21.2093 15.2033 21.5265 15.5776C21.8436 15.9519 22.0121 16.4297 21.9999 16.9201Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span>+ 20 01000670590</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex items-center gap-2"
+                    href="mailto:info@arabstudents.com"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7M4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6C2 4.89543 2.89543 4 4 4Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span>Info@arabstudents.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center gap-2" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.4277 21.9293 12.2168 21.9998 12 21.9998C11.7832 21.9998 11.5723 21.9293 11.399 21.799C9.539 20.193 4 14.993 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+
+                    <span>القاهرة</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-image absolute bottom-0 -inset-e-10 2xl:-inset-e-20 opacity-70"
+          data-hide-mobile
+        >
+          <img
+            src="../../assets/images/shared/footer-image.webp"
+            alt=""
+            role="presentation"
+            loading="lazy"
+            decoding="async"
+            width="453"
+            height="520"
+          />
+        </div>
+      </div>
+      <div class="lower-footer-content bg-blue-600 py-2">
+        <div
+          class="container flex justify-between items-center text-sm leading-4.5 text-natural-25"
+        >
+          <p class="flex items-end gap-1">
+            جميع الحقوق محفوظه ل
+            <a href="#"
+              ><img
+                src="../../assets/images/shared/digital-bond-logo.webp"
+                alt="Digital bond"
+                loading="lazy"
+                decoding="async"
+                width="48"
+                height="37" /></a
+            >2026 &copy;
+          </p>
+          <a href="#" class="underline">سياسة الخصوصية</a>
+        </div>
+      </div>
+    </footer>
     <div
       id="mobile-sidenav"
       class="fixed inset-0 z-60 invisible transition-all duration-300"
