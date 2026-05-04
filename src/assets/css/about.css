@@ -1,0 +1,30 @@
+.faq-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms ease-out;
+}
+[data-open] .faq-body {
+  grid-template-rows: 1fr;
+}
+.faq-body > div {
+  overflow: hidden;
+}
+.accordion-item .accordion-title {
+  border-radius: 0.5rem;
+  background-color: var(--color-natural-25);
+  color: var(--color-natural-900);
+}
+[data-open].accordion-item .accordion-title {
+  background-color: var(--color-primary);
+  color: var(--color-natural-25);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.faq-icon img {
+  transform: rotate(-90deg);
+  filter: grayscale(100%) invert(100%);
+}
+[data-open] .faq-icon img {
+  transform: rotate(0deg);
+  filter: grayscale(0) invert(0);
+}

@@ -11,18 +11,22 @@
 .article-content h5,
 .article-content h6 {
   font-family: var(--main-font);
-  color: var(--color-natural-800);
+  color: var(--color-blue-600);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 22px;
   margin-top: 10px;
 }
-
+.article-content h2 {
+  color: var(--color-yellow-600);
+  font-size: 24px;
+}
 .article-content p,
 .article-content ul,
 .article-content ol {
-  color: var(--color-natural-600);
-  line-height: 41.6px;
-  font-size: 26px;
+  color: var(--color-natural-700);
+  line-height: 30px;
+  font-size: 10px;
+  font-size: 18px;
 }
 
 .article-content ul,
@@ -52,8 +56,8 @@
   border-collapse: revert;
   margin: 1.5rem 0;
   p {
-    font-size: 20px;
-    line-height: normal;
+    font-size: 14px;
+    line-height: 18.2px;
   }
 }
 
@@ -61,14 +65,25 @@
 .article-content th {
   border: 1px solid var(--color-natural-300);
   padding: 23px 16px;
+  p {
+    color: var(--color-natural-800);
+  }
 }
 
 .article-content th,
 .article-content tr:nth-child(1) td {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   font-weight: 500;
   p {
-    color: #fff;
+    color: var(--color-natural-25);
+  }
+}
+.article-content tr:nth-child(1) {
+  td:first-child {
+    border-start-start-radius: 8px;
+  }
+  td:last-child {
+    border-start-end-radius: 8px;
   }
 }
 
