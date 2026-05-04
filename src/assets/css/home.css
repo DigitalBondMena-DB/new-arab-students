@@ -1,0 +1,46 @@
+.about-us-text-editor {
+        & > *:not(:last-child) {
+          margin-bottom: 3.5rem;
+        }
+        p {
+          color: var(--color-natural-700);
+          font-size: 1.75rem;
+          line-height: 2.688rem;
+        }
+        li {
+          margin-bottom: 1rem;
+          position: relative;
+          padding-inline-start: 1.8rem;
+          color: var(--color-natural-500);
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            inset-inline-start: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url("../../assets/images/shared/icons/right-marker-icon.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      .swiper-pagination.testimonials-pagination .swiper-pagination-bullet {
+        width: 16px;
+        height: 16px;
+        border: 1.5px solid var(--color-natural-100);
+        background-color: transparent;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+          background-color: var(--color-blue-600);
+          border: none;
+        }
+      }
+      .contact-us-map iframe {
+        width: 100%;
+        height: 283px;
+        border-radius: 16px;
+      }
