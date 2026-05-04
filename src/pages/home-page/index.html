@@ -232,7 +232,7 @@
               width="20"
               height="20"
               decoding="async"
-                fetchpriority="low"
+              fetchpriority="low"
               alt="Arrow"
             />
           </span>
@@ -733,9 +733,10 @@
         </div>
       </div>
     </section>
-    <section data-sidebar-theme="dark" class="pb-16 relative overflow-hidden">
+    <section class="pb-16 relative overflow-hidden">
       <div class="relative z-10 text-center lg:text-right">
         <div
+          data-sidebar-theme="dark"
           class="flex items-center justify-between text-natural-25 bg-primary pt-16 pb-[246px] px-4 lg:px-10"
         >
           <div class="section-header text-natural-100">
@@ -779,6 +780,7 @@
           </div>
         </div>
         <div
+          data-sidebar-theme="light"
           data-animate
           data-animation-direction="bottom"
           class="swiper services-swiper overflow-visible pb-10 -mt-44"
@@ -1100,11 +1102,13 @@
             ساعدنا آلاف الطلاب في إيجاد فرص دراسية مميزة في مصر، عبر خيارات
             تعليمية تدعم طموحهم الأكاديمي.
           </p>
-          <div class="flex items-center gap-8 mt-10">
-            <a
-              href="#"
-              class="py-2.5 rounded-[10px] inline-block px-14.5 header-font bg-secondary hover:bg-secondary/80 transition-colors duration300 text-natural-25"
-              >انضم لنا</a
+          <a
+            href="#"
+            class="flex items-center gap-8 mt-10 hover:opacity-90 transition-opacity duration-300"
+          >
+            <span
+              class="py-2.5 rounded-[10px] inline-block px-14.5 header-font bg-secondary text-natural-25"
+              >انضم لنا</span
             >
             <div class="bg-[#E6B62633] size-[72px] rounded-full flex-center">
               <div class="bg-[#E6B62680] size-14 rounded-full flex-center">
@@ -1122,7 +1126,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="absolute inset-e-0 bottom-0" data-hide-mobile>
           <img
@@ -2045,7 +2049,7 @@
     </div>
     <div
       id="social-bar"
-      class="fixed rotate-180 text-natural-25 [writing-mode:vertical-lr] items-center left-2 top-[100px] [@media(min-width:1341px)]:top-[188px] z-50 [&_img]:transition-all [&_img]:duration-500 transition-colors duration-500"
+      class="fixed rotate-180 text-natural-25 [writing-mode:vertical-lr] items-center left-6 top-[100px] [@media(min-width:1341px)]:top-[188px] z-50 [&_img]:transition-all [&_img]:duration-500 transition-colors duration-500"
     >
       <ul
         id="social-list"
@@ -2128,7 +2132,7 @@
         </li>
       </ul>
     </div>
-    <!-- <div class="fixed inset-e-6 top-[calc(50%+240px)] -translate-y-1/2 z-30">
+    <div class="fixed inset-e-12 top-[calc(50%+200px)] -translate-y-1/2 z-30">
       <a
         href="#"
         class="bg-[#67C15E] size-14 rounded-full flex-center hover:scale-110 transition-transform"
@@ -2142,17 +2146,32 @@
           alt="WhatsApp Support"
         />
       </a>
-    </div> -->
+    </div>
 
     <a
       href="#"
       dir="rtl"
-      class="fixed text-xl flex items-center right-0 top-1/2 -translate-y-1/2 z-20 translate-x-[170px] hover:translate-x-0 transition-transform duration-300"
+      class="fixed flex items-center hover:opacity-90 transition-opacity duration-300 right-0 top-1/2 -translate-y-1/2 z-20 gap-2 py-2 px-4 rounded-e-full bg-natural-25/15"
     >
-      <p class="bg-natural-25 py-2.5 ps-4 pe-6">رحلتك الدراسيه الان</p>
-      <span class="bg-orange-500 -ms-2 text-natural-25 px-6 py-2.5 rounded-xl">
+      <p class="text-[22px] font-semibold leading-[35px] text-natural-25">
         سجل من هنا
-      </span>
+      </p>
+      <div class="bg-[#E6B62633] size-[72px] rounded-full flex-center">
+        <div class="bg-[#E6B62680] size-14 rounded-full flex-center">
+          <div class="bg-secondary size-10 rounded-full flex-center">
+            <img
+              src="../../assets/images/shared/icons/chevron-down-white.svg"
+              width="24"
+              height="24"
+              class="rotate-90 ltr:-rotate-90"
+              alt=""
+              role="presentation"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
     </a>
 
     <script src="../../assets/js/main.js" defer></script>
