@@ -10,6 +10,8 @@
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
     <link
       rel="preload"
       href="../../assets/images/home/hero-bg-image.webp"
@@ -17,6 +19,18 @@
       fetchpriority="high"
       type="image/webp"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+      />
+    </noscript>
     <link
       rel="stylesheet"
       media="print"
@@ -531,528 +545,363 @@
         class="absolute inset-0 size-full object-cover aspect-3/2 z-10"
         alt=""
       />
-      <div class="max-w-4xl space-y-6 z-10 text-center">
-        <div class="flex justify-center lg:justify-end">
-          <div>
-            <h1
-              class="text-[56px] leading-[84px] font-header font-medium text-natural-25 tracking-[4%]"
-            >
-              خطوات الدراسة في <span class="text-secondary">الخارج</span> للطلاب
-              العرب
-            </h1>
-            <ul
-              class="flex [&>li]:px-4 items-center divide-x divide-natural-25 justify-center text-natural-25 lg:text-[22px] font-medium mt-4"
-            >
-              <li>
-                <a href="#">الرئيسية</a>
-              </li>
-              <li>
-                <a href="#">من نحن</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="py-24 relative overflow-hidden section-content-visibility">
-      <div class="container">
-        <div class="flex items-center justify-between">
-          <div
-            class="section-header text-natural-900 w-fit items-start! text-center lg:text-start"
-          >
+    <section class="pb-16 bg-natural-100 z-10" id="contact-section">
+      <img
+        src="../../assets/images/shared/music-tools-bg.webp"
+        width="1440"
+        height="960"
+        alt=""
+        loading="lazy"
+        decoding="async"
+        role="presentation"
+        class="absolute inset-0 size-full object-cover object-center opacity-3"
+      />
+
+      <div
+        class="px-4 lg:px-8 max-w-172 relative flex justify-center mx-auto -mt-90 z-10 bg-natural-25 rounded-[40px] shadow-[0_0_14px_0_rgba(0,0,0,0.05)]"
+      >
+        <div class="mx-auto rounded-[40px] bg-natural-200 p-6 md:p-10">
+          <div class="flex items-center justify-center gap-2 mb-10">
             <img
               src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
-              alt="graduated cap icon"
-              role="presentation"
-              loading="lazy"
-              decoding="async"
               width="24"
-              height="24"
-              data-hide-mobile
-              class="mt-4"
+              height="19"
+              alt=""
+              role="presentation"
+              decoding="async"
             />
-            <div>
-              <h2 class="text-10">الصور والفيديوهات</h2>
+            <h1
+              class="text-3xl md:text-[40px] leading-13 font-header font-medium text-natural-800"
+            >
+              استشر خبير تعليم دولي الآن
+            </h1>
+          </div>
+
+          <form id="contactForm" class="flex flex-col gap-6">
+            <div class="form-group relative">
+              <label
+                for="nameInput"
+                class="text-natural-900 font-medium leading-8 mb-px"
+                >الاسم بالكامل <span class="text-red-500">*</span></label
+              >
+              <input
+                type="text"
+                id="nameInput"
+                placeholder="الاسم بالكامل"
+                class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500"
+              />
+              <div id="nameError" class="text-red-500 text-sm mt-1 hidden">
+                <small class="hidden">الاسم يجب أن يكون أكثر من 3 حروف</small>
+                <small class="hidden">الاسم لا يجب أن يحتوي على أرقام</small>
+              </div>
             </div>
-          </div>
-          <a
-            href="#"
-            class="bg-blue-500 hover:bg-blue-500/80 transition-colors duration-300 text-natural-25 rounded-[10px] py-2.5 px-8"
-          >
-            اعرف اكثر
-          </a>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
+
+            <div class="form-group relative">
+              <label
+                for="emailInput"
+                class="text-natural-900 font-medium leading-8 mb-px"
+                >البريد الالكتروني <span class="text-red-500">*</span></label
               >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="البريد الالكتروني"
+                class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500"
+              />
+              <div id="emailError" class="text-red-500 text-sm mt-1 hidden">
+                البريد الالكتروني غير صالح
               </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
+            </div>
+
+            <div class="form-group relative">
+              <label
+                for="phoneInput"
+                class="text-natural-900 font-medium leading-8 mb-px"
+                >رقم الهاتف <span class="text-red-500">*</span></label
               >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
+              <input
+                type="tel"
+                id="phoneInput"
+                class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500"
+              />
+
+              <input type="hidden" id="actualPhone" name="actualPhone" />
+              <div id="validMsg" class="text-red-500 text-sm mt-1 hidden"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="form-group relative">
+                <label
+                  for="nationalityInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >الجنسية <span class="text-red-500">*</span></label
                 >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                <div class="relative">
+                  <select
+                    id="nationalityInput"
+                    class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
                   >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                    <option value="">الجنسية</option>
+                    <option value="سعودي">سعودي</option>
+                    <option value="مصري">مصري</option>
+                    <option value="أخرى">أخرى</option>
+                  </select>
+                  <img
+                    src="../../assets/images/shared/icons/chevron-down.svg"
+                    width="20"
+                    height="20"
+                    alt=""
+                    role="presentation"
+                    class="absolute inset-e-5 top-1/2 -translate-y-1/2 pointer-events-none w-5 h-5"
+                  />
                 </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
+                <div
+                  id="nationalityError"
+                  class="text-red-500 text-sm mt-1 hidden"
                 >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
+                  الرجاء اختيار الجنسية
+                </div>
               </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
+              <div class="form-group relative">
+                <label
+                  for="countryInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >اختر الدولة <span class="text-red-500">*</span></label
+                >
+                <div class="relative">
+                  <select
+                    id="countryInput"
+                    class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                  >
+                    <option value="">اختر الدوله</option>
+                    <option value="السعودية">السعودية</option>
+                    <option value="مصر">مصر</option>
+                    <option value="الإمارات">الإمارات</option>
+                    <option value="الكويت">الكويت</option>
+                    <option value="قطر">قطر</option>
+                    <option value="البحرين">البحرين</option>
+                    <option value="عمان">عمان</option>
+                    <option value="الأردن">الأردن</option>
+                    <option value="العراق">العراق</option>
+                    <option value="لبنان">لبنان</option>
+                    <option value="سوريا">سوريا</option>
+                    <option value="فلسطين">فلسطين</option>
+                    <option value="السودان">السودان</option>
+                    <option value="ليبيا">ليبيا</option>
+                    <option value="تونس">تونس</option>
+                    <option value="الجزائر">الجزائر</option>
+                    <option value="المغرب">المغرب</option>
+                    <option value="اليمن">اليمن</option>
+                    <option value="أخرى">أخرى</option>
+                  </select>
+                  <img
+                    src="../../assets/images/shared/icons/chevron-down.svg"
+                    width="20"
+                    height="20"
+                    alt=""
+                    role="presentation"
+                    class="absolute inset-e-5 top-1/2 -translate-y-1/2 pointer-events-none w-5 h-5"
+                  />
+                </div>
+                <div id="countryError" class="text-red-500 text-sm mt-1 hidden">
+                  الرجاء اختيار الدولة
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="form-group relative">
+                <label
+                  for="degreeInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >الدرجة العلمية <span class="text-red-500">*</span></label
+                >
+                <div class="relative">
+                  <select
+                    id="degreeInput"
+                    class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                  >
+                    <option value="">الدرجة العلمية</option>
+                    <option value="بكالوريوس">بكالوريوس</option>
+                    <option value="ماجستير">ماجستير</option>
+                    <option value="دكتوراه">دكتوراه</option>
+                  </select>
+                  <img
+                    src="../../assets/images/shared/icons/chevron-down.svg"
+                    width="20"
+                    height="20"
+                    alt=""
+                    role="presentation"
+                    class="absolute inset-e-5 top-1/2 -translate-y-1/2 pointer-events-none w-5 h-5"
+                  />
+                </div>
+                <div id="degreeError" class="text-red-500 text-sm mt-1 hidden">
+                  الرجاء اختيار الدرجة العلمية
+                </div>
+              </div>
+
+              <!-- التخصص الدراسي - always visible -->
+              <div class="form-group relative">
+                <label
+                  for="specializationInput"
+                  class="text-natural-900 font-medium leading-8 mb-px"
+                  >التخصص الدراسي<span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="specializationInput"
+                  placeholder="التخصص الدراسي"
+                  class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
                 />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
                 <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
+                  id="specializationError"
+                  class="text-red-500 text-sm mt-1 hidden"
                 >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                  الرجاء إدخال التخصص الدراسي
                 </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
               </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
+            </div>
+
+            <!-- Conditional fields container - uses grid for smooth no-shift transitions -->
+            <div
+              id="degreeConditionalFields"
+              class="grid transition-all duration-300"
+              style="grid-template-rows: 0fr; opacity: 0"
             >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+              <div class="overflow-hidden">
+                <div class="flex flex-col gap-6">
+                  <!-- باكلوريوس fields: التشعيب الدراسي + المعدل الدراسي -->
+                  <div id="bachelorFields" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div class="form-group relative">
+                        <label
+                          for="branchInput"
+                          class="text-natural-900 font-medium leading-8 mb-px"
+                          >التشعيب الدراسي<span class="text-red-500"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="branchInput"
+                          placeholder="التشعيب الدراسي"
+                          class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                        />
+                        <div
+                          id="branchError"
+                          class="text-red-500 text-sm mt-1 hidden"
+                        >
+                          الرجاء إدخال التشعيب الدراسي
+                        </div>
+                      </div>
+                      <div class="form-group relative">
+                        <label
+                          for="gpaInput"
+                          class="text-natural-900 font-medium leading-8 mb-px"
+                          >المعدل الدراسي<span class="text-red-500"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="gpaInput"
+                          inputmode="numeric"
+                          placeholder="المعدل الدراسي"
+                          class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                        />
+                        <div
+                          id="gpaError"
+                          class="text-red-500 text-sm mt-1 hidden"
+                        >
+                          الرجاء إدخال المعدل الدراسي
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ماجستير fields: تخصص البكالوريوس -->
+                  <div id="masterFields" class="hidden">
+                    <div class="form-group relative">
+                      <label
+                        for="bachelorSpecInput"
+                        class="text-natural-900 font-medium leading-8 mb-px"
+                        >تخصص البكالوريوس<span class="text-red-500"
+                          >*</span
+                        ></label
+                      >
+                      <input
+                        type="text"
+                        id="bachelorSpecInput"
+                        placeholder="تخصص البكالوريوس"
+                        class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                      />
+                      <div
+                        id="bachelorSpecError"
+                        class="text-red-500 text-sm mt-1 hidden"
+                      >
+                        الرجاء إدخال تخصص البكالوريوس
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- دكتوراه fields: تخصص البكالوريوس + تخصص الماجستير -->
+                  <div id="phdFields" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div class="form-group relative">
+                        <label
+                          for="phdBachelorSpecInput"
+                          class="text-natural-900 font-medium leading-8 mb-px"
+                          >تخصص البكالوريوس<span class="text-red-500"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="phdBachelorSpecInput"
+                          placeholder="تخصص البكالوريوس"
+                          class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                        />
+                        <div
+                          id="phdBachelorSpecError"
+                          class="text-red-500 text-sm mt-1 hidden"
+                        >
+                          الرجاء إدخال تخصص البكالوريوس
+                        </div>
+                      </div>
+                      <div class="form-group relative">
+                        <label
+                          for="masterSpecInput"
+                          class="text-natural-900 font-medium leading-8 mb-px"
+                          >تخصص الماجستير<span class="text-red-500"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          id="masterSpecInput"
+                          placeholder="تخصص الماجستير"
+                          class="w-full border border-natural-75 rounded-lg p-3 outline-none focus:border-secondary transition-all placeholder:text-natural-500 appearance-none"
+                        />
+                        <div
+                          id="masterSpecError"
+                          class="text-red-500 text-sm mt-1 hidden"
+                        >
+                          الرجاء إدخال تخصص الماجستير
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
               </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
+            </div>
+
+            <button
+              type="submit"
+              class="bg-secondary mx-auto text-natural-25 rounded-2xl px-20 py-3.5 text-xl leading-6 header-font hover:bg-secondary/80 transition-color duration-300"
             >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
-              </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
-              </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
-              </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
-              </div>
-            </a>
-          </article>
-          <article class="card">
-            <a
-              href="#"
-              class="block z-10 relative group rounded-[14px] overflow-hidden"
-              itemprop="url"
-            >
-              <figure class="w-full h-[410px]">
-                <img
-                  src="../../assets/images/shared/image-blog-test.png"
-                  width="411"
-                  height="308"
-                  class="block size-full object-cover object-center"
-                  alt="كلية الآداب جامعة القاهرة قسم اللغات والترجمة"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
-              <div
-                class="absolute inset-0 size-full opacity-0 group-hover:opacity-100 flex-center flex-col p-6 bg-linear-to-b from-white/0 to-black/40"
-              >
-                <div
-                  class="size-[85px] flex-center backdrop-blur-md bg-natural-25/20 rounded-full absolute"
-                >
-                  <svg
-                    width="16"
-                    height="20"
-                    viewBox="0 0 16 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1L15 10L1 19V1Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="text-xl mt-auto text-natural-100 font-medium leading-[24px] self-start justify-self-end"
-                >
-                  تطوير المناهج الدراسية في جامعة القاهرة
-                </p>
-              </div>
-            </a>
-          </article>
-        </div>
-        <div class="flex justify-center items-center gap-12 mt-8">
-          <a
-            type="button"
-            class="swiper-spec-prev w-12 h-12 border border-dashed border-blue-600 rounded-full flex-center hover:scale-105 transition-transform pointer-events-none invert-50"
-            aria-label="السابق"
-            disabled=""
-            tabindex="-1"
-            aria-controls="swiper-wrapper-1f2945ba4273d35d"
-            aria-disabled="true"
-          >
-            <img
-              src="../../assets/images/shared/icons/arrow-cta.svg"
-              width="24"
-              height="24"
-              alt=""
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              class="rtl:rotate-180 pointer-events-none"
-            />
-          </a>
-          <div class="text-natural-500 text-xl font-medium">
-            <span>130</span>
-            <span>/</span>
-            <span>8</span>
-          </div>
-          <a
-            type="button"
-            class="swiper-spec-next w-12 h-12 border border-blue-600 border-dashed rounded-full flex-center hover:scale-105 transition-transform [&amp;.swiper-button-disabled]:pointer-events-none [&amp;.swiper-button-disabled]:brightness-0 [&amp;.swiper-button-disabled]:invert-50"
-            aria-label="التالي"
-            tabindex="0"
-            aria-controls="swiper-wrapper-1f2945ba4273d35d"
-            aria-disabled="false"
-          >
-            <!-- Design: Default is orange, disabled is white/grey. -->
-            <img
-              src="../../assets/images/shared/icons/arrow-cta.svg"
-              width="24"
-              height="24"
-              alt=""
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              class="ltr:-scale-x-100"
-            />
-          </a>
+              ابدأ رحلتك الآن
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -1359,5 +1208,10 @@
     </a>
     <script src="../../assets/js/main.js" defer></script>
     <script src="../../assets/js/mobile-optmizer.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"
+      defer
+    ></script>
+    <script src="../../assets/js/consult-an-expert.js" defer></script>
   </body>
 </html>
