@@ -1,4 +1,5 @@
 .about-us-text-editor {
+  font-weight: 500;
         & > *:not(:last-child) {
           margin-bottom: 3.5rem;
         }
@@ -6,6 +7,7 @@
           color: var(--color-natural-700);
           font-size: 1.75rem;
           line-height: 2.688rem;
+          
         }
         li {
           margin-bottom: 1rem;

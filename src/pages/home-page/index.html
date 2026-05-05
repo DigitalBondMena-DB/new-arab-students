@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>=Arab Students</title>
+    <title>Arab Students</title>
     <meta name="theme-color" content="#22a3d1" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
+    <link rel="icon" href="../../assets/images/shared/main-logo.png">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
     <link
@@ -67,180 +68,182 @@
   <body class="bg-natural-25 font-main">
     <header class="fixed top-0 left-0 w-full z-50 header-font font-medium">
       <div
-        class="bg-primary z-10 relative px-6 lg:px-[62px] py-4 flex items-center justify-between mx-auto shadow-lg transition-all duration-300 hover:shadow-xl"
+        class="bg-primary z-10 relative py-4 shadow-lg transition-all duration-300 hover:shadow-xl"
       >
-        <button
-          id="mobile-menu-toggle"
-          class="[@media(min-width:1341px)]:hidden text-natural-25 p-2"
-          aria-label="Toggle Menu"
-        >
-          <div class="flex flex-col gap-1">
-            <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
-            <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
-            <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
-          </div>
-        </button>
-        <a href="./index.html">
-          <img
-            src="../../assets/images/shared/main-logo.png"
-            width="56"
-            height="56"
-            fetchpriority="low"
-            decoding="async"
-            alt="Logo"
-          />
-        </a>
-        <nav class="hidden [@media(min-width:1341px)]:block">
-          <ul
-            class="[@media(min-width:1341px)]:flex items-center gap-[37px] text-natural-25 text-lg"
+        <div class="container flex items-center justify-between">
+          <button
+            id="mobile-menu-toggle"
+            class="[@media(min-width:83.8125rem)]:hidden text-natural-25 p-2"
+            aria-label="Toggle Menu"
           >
-            <li>
-              <a
-                href="../about-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >من نحن</a
-              >
-            </li>
-            <li>
-              <a
-                href="../vision-2030-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >الخدمات</a
-              >
-            </li>
-            <li>
-              <a
-                href="../vision-2030-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >المقالات</a
-              >
-            </li>
-            <li>
-              <a
-                href="../vision-2030-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >المعرض</a
-              >
-            </li>
-            <li
-              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
-              data-dropdown-trigger="upgrade-yourself"
-            >
-              <span>خطوات الدراسة في الخارج</span>
-              <img
-                src="../../assets/images/shared/icons/chevron-down-white.svg"
-                width="16"
-                height="16"
-                loading="lazy"
-                decoding="async"
-                alt="Chevron"
-                class="w-4 h-4 transition-transform duration-300"
-              />
-              <div
-                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
-              >
-                <ul
-                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
-                >
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >تحديد ميزانية الدراسة</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >تحديد الوجهة الدراسية</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
-              data-dropdown-trigger="upgrade-yourself"
-            >
-              <span>المنح الدراسية</span>
-              <img
-                src="../../assets/images/shared/icons/chevron-down-white.svg"
-                width="16"
-                height="16"
-                decoding="async"
-                fetchpriority="low"
-                alt="Chevron"
-                class="w-4 h-4 transition-transform duration-300"
-              />
-              <div
-                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
-              >
-                <ul
-                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
-                >
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >المنح الدراسية في الأردن</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
-              data-dropdown-trigger="upgrade-yourself"
-            >
-              <span>اختبارات اللغة</span>
-              <img
-                src="../../assets/images/shared/icons/chevron-down-white.svg"
-                width="16"
-                height="16"
-                decoding="async"
-                fetchpriority="low"
-                alt="Chevron"
-                class="w-4 h-4 transition-transform duration-300"
-              />
-              <div
-                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
-              >
-                <ul
-                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
-                >
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >اختبار آيلتس</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >اختبار التوفل</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-
-        <a
-          href="#"
-          class="bg-natural-25 hover:bg-natural-25/80 text-blue-600 px-4 py-2.5 rounded-[10px] text-xl flex items-center gap-4 group transition-colors"
-        >
-          اتصل بنا
-          <span
-            class="transform group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform ltr:scale-x-[-1]"
-          >
+            <div class="flex flex-col gap-1">
+              <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
+              <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
+              <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
+            </div>
+          </button>
+          <a href="./index.html">
             <img
-              src="../../assets/images/shared/icons/arrow-cta.svg"
-              width="20"
-              height="20"
-              decoding="async"
+              src="../../assets/images/shared/main-logo.png"
+              width="56"
+              height="56"
               fetchpriority="low"
-              alt="Arrow"
+              decoding="async"
+              alt="Logo"
             />
-          </span>
-        </a>
+          </a>
+          <nav class="hidden [@media(min-width:83.8125rem)]:block">
+            <ul
+              class="[@media(min-width:83.8125rem)]:flex items-center gap-9.25 text-natural-25 text-lg"
+            >
+              <li>
+                <a
+                  href="../about-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../vision-2030-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >الخدمات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../vision-2030-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >المقالات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../vision-2030-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >المعرض</a
+                >
+              </li>
+              <li
+                class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+                data-dropdown-trigger="upgrade-yourself"
+              >
+                <span>خطوات الدراسة في الخارج</span>
+                <img
+                  src="../../assets/images/shared/icons/chevron-down-white.svg"
+                  width="16"
+                  height="16"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Chevron"
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+                <div
+                  class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+                >
+                  <ul
+                    class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                  >
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >تحديد ميزانية الدراسة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >تحديد الوجهة الدراسية</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+                data-dropdown-trigger="upgrade-yourself"
+              >
+                <span>المنح الدراسية</span>
+                <img
+                  src="../../assets/images/shared/icons/chevron-down-white.svg"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  fetchpriority="low"
+                  alt="Chevron"
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+                <div
+                  class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+                >
+                  <ul
+                    class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                  >
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >المنح الدراسية في الأردن</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+                data-dropdown-trigger="upgrade-yourself"
+              >
+                <span>اختبارات اللغة</span>
+                <img
+                  src="../../assets/images/shared/icons/chevron-down-white.svg"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  fetchpriority="low"
+                  alt="Chevron"
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+                <div
+                  class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+                >
+                  <ul
+                    class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                  >
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >اختبار آيلتس</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >اختبار التوفل</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <a
+            href="#"
+            class="bg-natural-25 hover:bg-natural-25/80 text-blue-600 px-4 py-2.5 rounded-[10px] text-xl flex items-center gap-4 group transition-colors"
+          >
+            تواصل معنا
+            <span
+              class="transform group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform ltr:scale-x-[-1]"
+            >
+              <img
+                src="../../assets/images/shared/icons/arrow-cta.svg"
+                width="20"
+                height="20"
+                decoding="async"
+                fetchpriority="low"
+                alt="Arrow"
+              />
+            </span>
+          </a>
+        </div>
       </div>
 
       <div
-        class="hidden [@media(min-width:1341px)]:flex items-center justify-center bg-natural-25 rounded-b-xl py-4 px-6 w-[calc(100%-18px)] mx-auto"
+        class="hidden [@media(min-width:83.8125rem)]:flex items-center justify-center bg-natural-25 rounded-b-xl py-4 px-6 w-[calc(100%-18px)] mx-auto"
       >
         <nav class="w-full">
           <ul
@@ -571,10 +574,13 @@
         <div class="flex justify-center lg:justify-end">
           <div>
             <h1
-              class="text-[40px] lg:text-[56px] leading-21 font-header font-medium text-natural-25 tracking-[4%]"
+              class="text-[2.5rem] lg:text-[3.5rem] leading-21 font-header font-medium text-natural-25 tracking-[4%]"
             >
-              خطوات الدراسة في <span class="text-secondary">الخارج</span> للطلاب
-              العرب
+             <span class="last:bg-secondary last-word-color" id="">  خطوات الدراسة في الخارج</span>
+              <span class="block">
+                للطلاب
+                العرب
+              </span> 
             </h1>
             <p
               class="text-[22px] font-medium text-natural-25 mt-4 leading-[36.4px]"
@@ -583,6 +589,92 @@
             </p>
           </div>
         </div>
+      </div>
+      <div
+        id="social-bar"
+        data-hide-mobile
+        class="absolute rotate-180 text-natural-25 [writing-mode:vertical-lr] items-center left-6 top-25 [@media(min-width:83.8125rem)]:top-47 z-10 [&_img]:transition-all [&_img]:duration-500 transition-colors duration-500"
+      >
+        <ul
+          id="social-list"
+          class="flex items-center text-xs lg:text-sm gap-4 2xl:gap-6 text-nowrap"
+        >
+          <li>
+            <a href="#" class="flex items-center gap-1.5">
+              <span>facebook</span>
+              <img
+                src="../../assets/images/shared/icons/facebook-white-icon.svg"
+                alt="facebook"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="18"
+                height="18"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>LinkedIn</span>
+              <img
+                src="../../assets/images/shared/icons/linkedIn-white-icon.svg"
+                alt="LinkedIn"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="17"
+                height="17"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>Tik tok</span>
+              <img
+                src="../../assets/images/shared/icons/tiktok-white-icon.svg"
+                alt="tiktok"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="16"
+                height="18"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>Instagram</span>
+              <img
+                src="../../assets/images/shared/icons/instagram-white-icon.svg"
+                alt="Instagram"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="18"
+                height="18"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>X</span>
+              <img
+                src="../../assets/images/shared/icons/x-white-icon.svg"
+                alt="x"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="18"
+                height="16"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="py-16 relative section-content-visibility overflow-hidden">
@@ -594,7 +686,7 @@
         loading="lazy"
         decoding="async"
       />
-      <div class="container">
+      <div class="container relative">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-14">
           <div data-animate data-animation-direction="start">
             <div class="section-header text-natural-800">
@@ -628,9 +720,9 @@
             </a>
           </div>
           <div>
-            <div class="relative" data-animate data-animation-direction="end">
+            <div class="" data-animate data-animation-direction="end">
               <div
-                class="bg-primary flex-center relative mb-4 lg:absolute lg:top-6 lg:-inset-e-10 2xl:inset-e-18.25 z-10 px-6 py-4 gap-5 text-natural-25 rounded-[10px] overflow-hidden"
+                class="bg-primary flex-center relative mb-4 lg:absolute lg:top-6 inset-e-0 z-10 px-6 py-4 gap-5 text-natural-25 rounded-[10px] overflow-hidden"
               >
                 <div class="three-line-decore absolute bottom-0 -inset-e-2">
                   <span></span>
@@ -647,8 +739,10 @@
                   role="presentation"
                 />
                 <div>
-                  <h3 class="text-xl font-medium counter">طالب خريج</h3>
-                  <span class="text-[28px] font-bold" dir="ltr"> + 1931</span>
+                  <h3 class="text-xl font-medium">طالب خريج</h3>
+                  <span class="text-[28px] font-bold counter" dir="ltr"
+                    >+1931</span
+                  >
                 </div>
               </div>
               <img
@@ -698,7 +792,8 @@
       <div class="container">
         <div
           class="h-132.5 relative rounded-[28px] overflow-hidden flex-center"
-          data-animate data-animation-direction="top"
+          data-animate
+          data-animation-direction="top"
         >
           <div class="inset-0 w-full z-10 absolute bg-[#0000008F]"></div>
           <video
@@ -715,7 +810,7 @@
             />
           </video>
           <div class="text-natural-25 text-center z-10">
-            <h2 class="font-medium text-[40px] max-w-268">
+            <h2 class="font-medium text-[40px] max-w-268 header-font">
               ادرس فى مصر فى اكثر من جامعة و اكادمية لمعلومات اكثر الطلاب العرب
             </h2>
             <a
@@ -729,47 +824,54 @@
     </section>
     <section class="pb-16 relative overflow-hidden">
       <div class="relative z-10 text-center lg:text-right">
-        <div
-          class="flex items-center justify-between text-natural-25 bg-primary pt-16 pb-61.5 px-4 lg:px-10"
-        >
-          <div class="section-header text-natural-100">
-            <img
-              src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
-              alt="graduated cap icon"
-              role="presentation"
-              loading="lazy"
-              fetchpriority="low"
-              decoding="async"
-              width="24"
-              height="24"
-            />
-            <h2 class="text-[40px]">خدماتنا</h2>
-          </div>
-          <div class="flex-center gap-4">
-            <div class="flex flex-col items-center text-xs font-medium gap-1">
+        <div class="text-natural-25 bg-primary pt-16 pb-61.5 relative overflow-hidden">
+          <img src="../../assets/images/home/pattern.png" class="absolute inset-0 size-full" alt="" role="presentation" loading="lazy" decoding="async" >
+          <div class="container flex items-center justify-between">
+            <div>
+              <div class="section-header text-natural-100">
+                <img
+                  src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
+                  alt="graduated cap icon"
+                  role="presentation"
+                  loading="lazy"
+                  fetchpriority="low"
+                  decoding="async"
+                  width="24"
+                  height="24"
+                />
+                
+                  <h2 class="text-[40px]">خدماتنا</h2>
+                
+              </div>
+                                <p class="font-medium text-xl leading-6">تعرّف على خدماتنا الدراسية المتكاملة</p>
+
+            </div>
+            <div class="flex-center gap-4">
+              <div class="flex flex-col items-center text-xs font-medium gap-1">
+                <img
+                  src="../../assets/images/shared/testimonials-profile.webp"
+                  width="88"
+                  height="42"
+                  alt=""
+                  role="presentation"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p class="font-bold text-base">
+                  طالب مقيد <span dir="ltr" class="counter">+1000</span>
+                </p>
+              </div>
               <img
-                src="../../assets/images/shared/testimonials-profile.webp"
-                width="88"
-                height="42"
+                src="../../assets/images/home/services-bg-icon.webp"
                 alt=""
                 role="presentation"
                 loading="lazy"
                 decoding="async"
+                width="134"
+                height="129"
+                data-hide-mobile
               />
-              <p class="font-bold text-base">
-                طالب مقيد <span dir="ltr" class="counter">+1000</span>
-              </p>
             </div>
-            <img
-              src="../../assets/images/home/services-bg-icon.webp"
-              alt=""
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              width="134"
-              height="129"
-              data-hide-mobile
-            />
           </div>
         </div>
         <div
@@ -782,7 +884,7 @@
             <article class="swiper-slide h-auto">
               <a
                 href="#"
-                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6 group overflow-hidden"
               >
                 <div
                   class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
@@ -807,7 +909,7 @@
                 </div>
                 <div class="mb-10">
                   <h3
-                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                    class="text-[1.625rem] line-clamp-1 font-bold text-natural-900  main-font leading-loose"
                   >
                     اختيار التخصص الدراسي
                   </h3>
@@ -820,25 +922,20 @@
 
                 <div class="px-4 pb-6 rounded-b-lg">
                   <div
-                    class="relative w-full h-46.75 rounded-2xl overflow-hidden"
+                    class="relative w-full aspect-357/224 rounded-xl overflow-hidden"
                   >
                     <img
                       src="../../assets/images/home/hero-bg-image.webp"
                       decoding="async"
                       loading="lazy"
                       width="411"
-                      height="187"
-                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      height="224"
+                      class="size-full object-cover"
                       alt="القطاع الهندسي"
                     />
-                    <img
-                      src="../../assets/images/shared/pattern-bg.png"
-                      class="absolute inset-0 size-full object-cover z-10"
-                      alt=""
-                      role="presentation"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full top-0 h-1/2 group-hover:-translate-y-full transition-transform duration-300" alt="">
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full bottom-0 h-1/2 rotate-180 group-hover:translate-y-full transition-transform duration-300" alt="">
+
                   </div>
                 </div>
               </a>
@@ -846,7 +943,7 @@
             <article class="swiper-slide h-auto">
               <a
                 href="#"
-                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6 group overflow-hidden"
               >
                 <div
                   class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
@@ -871,7 +968,7 @@
                 </div>
                 <div class="mb-10">
                   <h3
-                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                    class="text-[1.625rem] line-clamp-1 font-bold text-natural-900  main-font leading-loose"
                   >
                     اختيار التخصص الدراسي
                   </h3>
@@ -884,25 +981,20 @@
 
                 <div class="px-4 pb-6 rounded-b-lg">
                   <div
-                    class="relative w-full h-46.75 rounded-2xl overflow-hidden"
+                    class="relative w-full aspect-357/224 rounded-xl overflow-hidden"
                   >
                     <img
                       src="../../assets/images/home/hero-bg-image.webp"
                       decoding="async"
                       loading="lazy"
                       width="411"
-                      height="187"
-                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      height="224"
+                      class="size-full object-cover"
                       alt="القطاع الهندسي"
                     />
-                    <img
-                      src="../../assets/images/shared/pattern-bg.png"
-                      class="absolute inset-0 size-full object-cover z-10"
-                      alt=""
-                      role="presentation"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full top-0 h-1/2 group-hover:-translate-y-full transition-transform duration-300" alt="">
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full bottom-0 h-1/2 rotate-180 group-hover:translate-y-full transition-transform duration-300" alt="">
+
                   </div>
                 </div>
               </a>
@@ -910,7 +1002,7 @@
             <article class="swiper-slide h-auto">
               <a
                 href="#"
-                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6 group overflow-hidden"
               >
                 <div
                   class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
@@ -935,7 +1027,7 @@
                 </div>
                 <div class="mb-10">
                   <h3
-                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                    class="text-[1.625rem] line-clamp-1 font-bold text-natural-900  main-font leading-loose"
                   >
                     اختيار التخصص الدراسي
                   </h3>
@@ -948,25 +1040,20 @@
 
                 <div class="px-4 pb-6 rounded-b-lg">
                   <div
-                    class="relative w-full h-46.75 rounded-2xl overflow-hidden"
+                    class="relative w-full aspect-357/224 rounded-xl overflow-hidden"
                   >
                     <img
                       src="../../assets/images/home/hero-bg-image.webp"
                       decoding="async"
                       loading="lazy"
                       width="411"
-                      height="187"
-                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      height="224"
+                      class="size-full object-cover"
                       alt="القطاع الهندسي"
                     />
-                    <img
-                      src="../../assets/images/shared/pattern-bg.png"
-                      class="absolute inset-0 size-full object-cover z-10"
-                      alt=""
-                      role="presentation"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full top-0 h-1/2 group-hover:-translate-y-full transition-transform duration-300" alt="">
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full bottom-0 h-1/2 rotate-180 group-hover:translate-y-full transition-transform duration-300" alt="">
+
                   </div>
                 </div>
               </a>
@@ -974,7 +1061,7 @@
             <article class="swiper-slide h-auto">
               <a
                 href="#"
-                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6"
+                class="block h-full relative rounded-[10px] bg-natural-25 py-4 px-6 group overflow-hidden"
               >
                 <div
                   class="three-line-decore absolute bottom-2 -inset-e-2 [&_span]:bg-natural-100"
@@ -999,7 +1086,7 @@
                 </div>
                 <div class="mb-10">
                   <h3
-                    class="text-[26px] line-clamp-1 font-bold text-natural-900 leading-[100%] main-font"
+                    class="text-[1.625rem] line-clamp-1 font-bold text-natural-900  main-font leading-loose"
                   >
                     اختيار التخصص الدراسي
                   </h3>
@@ -1012,29 +1099,25 @@
 
                 <div class="px-4 pb-6 rounded-b-lg">
                   <div
-                    class="relative w-full h-46.75 rounded-2xl overflow-hidden"
+                    class="relative w-full aspect-357/224 rounded-xl overflow-hidden"
                   >
                     <img
                       src="../../assets/images/home/hero-bg-image.webp"
                       decoding="async"
                       loading="lazy"
                       width="411"
-                      height="187"
-                      class="size-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      height="224"
+                      class="size-full object-cover"
                       alt="القطاع الهندسي"
                     />
-                    <img
-                      src="../../assets/images/shared/pattern-bg.png"
-                      class="absolute inset-0 size-full object-cover z-10"
-                      alt=""
-                      role="presentation"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full top-0 h-1/2 group-hover:-translate-y-full transition-transform duration-300" alt="">
+                    <img src="../../assets/images/shared/half-pattern.png" class="absolute inset-x-0 w-full bottom-0 h-1/2 rotate-180 group-hover:translate-y-full transition-transform duration-300" alt="">
+
                   </div>
                 </div>
               </a>
             </article>
+            
           </div>
         </div>
         <div class="flex justify-center items-center gap-4 mt-8">
@@ -1120,7 +1203,7 @@
             </div>
           </a>
         </div>
-        <div class="absolute inset-e-0 bottom-0" data-hide-mobile >
+        <div class="absolute inset-e-0 bottom-0" data-hide-mobile>
           <img
             src="../../assets/images/home/Academic-alternatives.webp"
             alt=""
@@ -1146,7 +1229,7 @@
       />
       <img
         src="../../assets/images/shared/icons/book-Icon-bg.webp"
-        class="absolute inset-e-15 bottom-15"
+        class="absolute inset-e-15 bottom-15 animate-float"
         width="161"
         height="102"
         role="presentation"
@@ -1177,8 +1260,9 @@
           </div>
         </div>
         <div
-        data-animate data-animation-direction="bottom"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-8 lg:gap-28 mt-6"
+          data-animate
+          data-animation-direction="bottom"
+          class="flex-center flex-col lg:flex-row gap-28 lg:gap-28 mt-6"
         >
           <a href="https://digitalbondmena.com/" class="block">
             <figure>
@@ -1286,7 +1370,9 @@
                 بفضل مساعدتهم قدرت أبدأ رحلتي الدراسية في الخارج بسهولة وثقة،
                 وأنصح أي طالب بالتجربة.
               </p>
-              <h3 class="text-2xl font-bold header-font">خالد سيد</h3>
+              <h3 class="text-2xl font-medium header-font main-font main-font">
+                خالد سيد
+              </h3>
             </div>
             <div class="swiper-slide">
               <p
@@ -1295,16 +1381,20 @@
                 تجربة رائعة جدًا، الفريق كان متعاونًا للغاية في كل خطوة من خطوات
                 التقديم والقبول الجامعي.
               </p>
-              <h3 class="text-2xl font-bold header-font">أحمد محمد</h3>
+              <h3 class="text-2xl font-medium header-font main-font main-font">
+                أحمد محمد
+              </h3>
             </div>
             <div class="swiper-slide">
               <p
-                class="text-2xl lg:text-[32px] font-medium leading-[1.6] mb-8 main-font"
+                class="text-xl lg:text-[28px] font-medium leading-[1.6] mb-8 main-font"
               >
                 أفضل مكتب للاستشارات التعليمية، ساعدوني في اختيار التخصص المناسب
                 لميولي وطموحاتي.
               </p>
-              <h3 class="text-2xl font-bold header-font">سارة علي</h3>
+              <h3 class="text-2xl font-medium header-font main-font main-font">
+                سارة علي
+              </h3>
             </div>
             <div class="swiper-slide">
               <p
@@ -1313,7 +1403,9 @@
                 من أول تواصل لحد ما وصلت الجامعة، كل حاجة كانت منظمة وواضحة.
                 شكرًا ليكم.
               </p>
-              <h3 class="text-2xl font-bold header-font">يوسف أحمد</h3>
+              <h3 class="text-2xl font-medium header-font main-font main-font">
+                يوسف أحمد
+              </h3>
             </div>
           </div>
 
@@ -1714,7 +1806,7 @@
                       role="presentation"
                     />
                     <span class="sr-only">رقم الهاتف:</span>
-                    <span>+ 20 01000670590</span>
+                    <span dir="ltr">+ 20 01000670590</span>
                   </a>
                 </li>
                 <li>
@@ -1861,7 +1953,7 @@
       </div>
     </section>
     <footer
-      class="bg-primary rounded-t-[72px] py-10 overflow-hidden text-natural-25"
+      class="bg-primary rounded-t-[72px] pt-10 overflow-hidden text-natural-25 relative"
     >
       <div
         class="footer-header flex flex-col lg:flex-row lg:items-center gap-2"
@@ -1883,100 +1975,108 @@
           قم بالدراسة فى الخارج باسهل و اسرع الطرق
         </h2>
       </div>
-      <div class="container me-auto relative pb-6">
-        <div
-          class="flex flex-col lg:flex-row text-center lg:text-start gap-4 lg:gap-18 mt-30"
-        >
-          <div>
-            <h3 class="text-lg font-medium">الروابط السريعه</h3>
-            <div class="flex flex-col lg:flex-row items-center gap-4 lg:gap-18">
-              <ul class="space-y-2 text-natural-25 leading-8 font-medium mt-4">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">الخدمات</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">المعرض</a></li>
-              </ul>
-              <ul class="space-y-2 text-natural-25 leading-8 font-medium mt-4">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">الخدمات</a></li>
-                <li><a href="#">المقالات</a></li>
-                <li><a href="#">المعرض</a></li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-lg font-medium">تواصل معنا</h3>
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-              <ul
-                class="space-y-4 text-natural-25 text-lg mt-10 flex flex-col items-center lg:items-start"
+      <div class="container me-auto relative ">
+        <div class="flex justify-between">
+          <div
+            class="flex flex-col lg:flex-row text-center lg:text-start gap-4 lg:gap-18 mt-10"
+          >
+            <div>
+              <h3 class="text-lg font-medium">الروابط السريعه</h3>
+              <div
+                class="flex flex-col lg:flex-row items-center gap-4 lg:gap-18"
               >
-                <li>
-                  <a class="flex items-center gap-2" href="tel+20 01000670590">
-                    <img
-                      src="../../assets/images/shared/icons/phone-icon.svg"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      width="24"
-                      height="24"
-                      role="presentation"
-                    />
-                    <span class="sr-only">رقم الهاتف:</span>
-                    <span>+ 20 01000670590</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="flex items-center gap-2"
-                    href="mailto:info@arabstudents.com"
-                  >
-                    <img
-                      src="../../assets/images/shared/icons/email-icon.svg"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      width="24"
-                      height="24"
-                      role="presentation"
-                    />
-                    <span class="sr-only">البريد الالكتروني:</span>
-                    <span>Info@arabstudents.com</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="flex items-center gap-2" href="#">
-                    <img
-                      src="../../assets/images/shared/icons/location-icon.svg"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      width="24"
-                      height="24"
-                      role="presentation"
-                    />
-                    <span class="sr-only">الموقع:</span>
-                    <span>القاهرة</span>
-                  </a>
-                </li>
-              </ul>
+                <ul
+                  class="space-y-2 text-natural-25 leading-8 font-medium mt-4"
+                >
+                  <li><a href="#">الرئيسية</a></li>
+                  <li><a href="#">من نحن</a></li>
+                  <li><a href="#">الخدمات</a></li>
+                  <li><a href="#">المقالات</a></li>
+                  <li><a href="#">المعرض</a></li>
+                </ul>
+                <ul
+                  class="space-y-2 text-natural-25 leading-8 font-medium mt-4"
+                >
+                  <li><a href="#">الرئيسية</a></li>
+                  <li><a href="#">من نحن</a></li>
+                  <li><a href="#">الخدمات</a></li>
+                  <li><a href="#">المقالات</a></li>
+                  <li><a href="#">المعرض</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-lg font-medium">تواصل معنا</h3>
+              <div class="grid grid-cols-1 lg:grid-cols-2">
+                <ul
+                  class="space-y-4 text-natural-25 text-lg mt-10 flex flex-col items-center lg:items-start"
+                >
+                  <li>
+                    <a
+                      class="flex items-center gap-2"
+                      href="tel+20 01000670590"
+                    >
+                      <img
+                        src="../../assets/images/shared/icons/phone-icon.svg"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        width="24"
+                        height="24"
+                        role="presentation"
+                      />
+                      <span class="sr-only">رقم الهاتف:</span>
+                      <span dir="ltr">+ 20 01000670590</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center gap-2"
+                      href="mailto:info@arabstudents.com"
+                    >
+                      <img
+                        src="../../assets/images/shared/icons/email-icon.svg"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        width="24"
+                        height="24"
+                        role="presentation"
+                      />
+                      <span class="sr-only">البريد الالكتروني:</span>
+                      <span>Info@arabstudents.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="flex items-center gap-2" href="#">
+                      <img
+                        src="../../assets/images/shared/icons/location-icon.svg"
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        width="24"
+                        height="24"
+                        role="presentation"
+                      />
+                      <span class="sr-only">الموقع:</span>
+                      <span>القاهرة</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          class="footer-image absolute bottom-0 -inset-e-10 2xl:-inset-e-20 opacity-70"
-          data-hide-mobile
-        >
-          <img
-            src="../../assets/images/shared/footer-image.webp"
-            alt=""
-            role="presentation"
-            loading="lazy"
-            decoding="async"
-            width="453"
-            height="520"
-          />
+          <div class="footer-image opacity-70 -mt-30" data-hide-mobile>
+            <img
+              src="../../assets/images/shared/footer-image.webp"
+              alt=""
+              role="presentation"
+              loading="lazy"
+              decoding="async"
+              width="453"
+              height="520"
+            />
+          </div>
         </div>
       </div>
       <div class="lower-footer-content bg-blue-600 py-2">
@@ -1997,6 +2097,91 @@
           </p>
           <a href="#" class="underline">سياسة الخصوصية</a>
         </div>
+      </div>
+       <div
+        id="social-bar"
+        class="absolute rotate-180 text-natural-25 [writing-mode:vertical-lr] items-center left-6 ltr:right-6  top-1/2 -translate-y-1/2  z-10"
+      >
+        <ul
+          id="social-list"
+          class="flex items-center text-xs lg:text-sm gap-4 2xl:gap-6 text-nowrap"
+        >
+          <li>
+            <a href="#" class="flex items-center gap-1.5">
+              <span>facebook</span>
+              <img
+                src="../../assets/images/shared/icons/facebook-white-icon.svg"
+                alt="facebook"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="18"
+                height="18"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>LinkedIn</span>
+              <img
+                src="../../assets/images/shared/icons/linkedIn-white-icon.svg"
+                alt="LinkedIn"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="17"
+                height="17"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>Tik tok</span>
+              <img
+                src="../../assets/images/shared/icons/tiktok-white-icon.svg"
+                alt="tiktok"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="16"
+                height="18"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>Instagram</span>
+              <img
+                src="../../assets/images/shared/icons/instagram-white-icon.svg"
+                alt="Instagram"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="18"
+                height="18"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center gap-1.5 text-sm">
+              <span>X</span>
+              <img
+                src="../../assets/images/shared/icons/x-white-icon.svg"
+                alt="x"
+                role="presentation"
+                loading="lazy"
+                decoding="async"
+                width="18"
+                height="16"
+                class="rotate-180"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
     <div
@@ -2029,97 +2214,12 @@
           <a
             href="#"
             class="border border-secondary text-secondary text-center py-3 rounded-lg"
-            >اتصل بنا</a
+            >تواصل معنا</a
           >
         </nav>
       </div>
     </div>
-    <div
-      id="social-bar"
-      class="fixed rotate-180 text-natural-25 [writing-mode:vertical-lr] items-center left-6 top-25 [@media(min-width:1341px)]:top-47 z-50 [&_img]:transition-all [&_img]:duration-500 transition-colors duration-500"
-    >
-      <ul
-        id="social-list"
-        class="flex items-center text-xs lg:text-sm gap-4 2xl:gap-6 text-nowrap"
-      >
-        <li>
-          <a href="#" class="flex items-center gap-1.5">
-            <span>facebook</span>
-            <img
-              src="../../assets/images/shared/icons/facebook-white-icon.svg"
-              alt="facebook"
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              width="18"
-              height="18"
-              class="rotate-180"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-1.5 text-sm">
-            <span>LinkedIn</span>
-            <img
-              src="../../assets/images/shared/icons/linkedIn-white-icon.svg"
-              alt="LinkedIn"
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              width="17"
-              height="17"
-              class="rotate-180"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-1.5 text-sm">
-            <span>Tik tok</span>
-            <img
-              src="../../assets/images/shared/icons/tiktok-white-icon.svg"
-              alt="tiktok"
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              width="16"
-              height="18"
-              class="rotate-180"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-1.5 text-sm">
-            <span>Instagram</span>
-            <img
-              src="../../assets/images/shared/icons/instagram-white-icon.svg"
-              alt="Instagram"
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              width="18"
-              height="18"
-              class="rotate-180"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#" class="flex items-center gap-1.5 text-sm">
-            <span>X</span>
-            <img
-              src="../../assets/images/shared/icons/x-white-icon.svg"
-              alt="x"
-              role="presentation"
-              loading="lazy"
-              decoding="async"
-              width="18"
-              height="16"
-              class="rotate-180"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="fixed inset-e-12 top-[calc(50%+200px)] -translate-y-1/2 z-30">
+    <div class="fixed inset-e-18 bottom-5 -translate-y-1/2 z-30">
       <a
         href="#"
         class="bg-[#67C15E] size-14 rounded-full flex-center hover:scale-110 transition-transform"
@@ -2134,12 +2234,11 @@
         />
       </a>
     </div>
-
     <a
       id="register-btn"
       href="#"
       dir="rtl"
-      class="fixed flex items-center hover:opacity-90 transition-opacity duration-300 right-0 top-1/2 -translate-y-1/2 z-20 gap-2 py-2 px-4 rounded-e-full bg-natural-25/15"
+      class="fixed flex items-center hover:opacity-90 transition-opacity duration-300 right-0 bottom-33.5 z-20 gap-2 py-2 px-4 rounded-e-full bg-natural-25/15"
     >
       <p class="text-[22px] font-semibold leading-8.75 text-natural-25">
         سجل من هنا

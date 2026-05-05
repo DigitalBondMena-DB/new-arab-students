@@ -20,6 +20,16 @@
   --color-natural-700: #3e4c59;
   --color-natural-800: #0e0e0e;
   --color-natural-900: #0e0e0e;
+  --animate-float: float 2.5s ease-in-out infinite;
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 }
 
 body {
@@ -94,6 +104,13 @@ h6 {
   }
 }
 @layer utilities {
+  .header-last-word::after {
+    content: attr(data-last-word);
+    color:var(--color-secondary);
+    /* transform: translateX(-100%); */
+    position: absolute;
+    inset-inline-end: 0;
+  }
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -174,17 +191,5 @@ h6 {
     }
   }
 
-  #social-bar {
-    transition:
-      color 0.3s ease,
-      transform 0.5s ease;
-  }
-
-  #social-bar.social-bar--light {
-    color: var(--color-natural-900) !important;
-  }
-
-  #social-bar.social-bar--light img {
-    filter: brightness(0) invert(0) !important;
-  }
+ 
 }
