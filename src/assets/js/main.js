@@ -118,13 +118,17 @@ function initSidebarThemeObserver() {
 }
 function handleRegisterBtnInteraction() {
   const registerBtn = document.getElementById("register-btn");
+  const toggleBtn = document.getElementById("registerToggleBtn");
+
   if (!registerBtn) return;
 
-  registerBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    registerBtn.classList.toggle("register-btn-expanded");
-  });
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      registerBtn.classList.toggle("register-btn-expanded");
+    });
+  }
 }
 function syncMobileMenu() {
   const e = () => {
