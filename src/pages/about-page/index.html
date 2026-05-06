@@ -559,11 +559,10 @@
             <h1
               class="text-[2.5rem] lg:text-[3.5rem] leading-21 font-header font-medium text-natural-25 tracking-[4%]"
             >
-             <span class="last:bg-secondary last-word-color" id="">  خطوات الدراسة في الخارج</span>
-              <span class="block">
-                للطلاب
-                العرب
-              </span> 
+              <span class="last:bg-secondary last-word-color" id="">
+                خطوات الدراسة في الخارج</span
+              >
+              <span class="block"> للطلاب العرب </span>
             </h1>
             <ul
               class="flex [&>li]:px-4 items-center divide-x divide-natural-25 justify-center text-natural-25 lg:text-[22px] font-medium mt-4"
@@ -674,9 +673,9 @@
         loading="lazy"
         decoding="async"
       />
-      <div class="container">
+      <div class="container relative">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-14">
-          <div>
+          <div data-animate data-animation-direction="start">
             <div class="section-header text-natural-800">
               <img
                 src="../../assets/images/shared/icons/graduated-cap-gold-icon.svg"
@@ -689,10 +688,18 @@
               />
               <h2 class="text-[40px]">من نحن</h2>
             </div>
-            <div class="about-us-text-editor">
+            <div
+              class="about-us-text-editor overflow-y-auto custom-scroll"
+              style="max-height: 300px"
+            >
               <p>
-                نساعدك على تحقيق حلم الدراسة في الخارج، ونرافقك خطوة بخطوة من
-                اختيار الوجهة حتى التخرج، نحو مستقبل واعد.
+                إيماناً منا بدور العلم في فتح عوالم المستقبل بكل فرصه وإمكاناته،
+                نقدم لك المساعدة لتحقيق حلمك الدراسي في الخارج، من خلال مجموعة
+                من الخبراء والاستشاريين الأكاديميين؛ لنكون رفقاء دربك خلال رحلتك
+                التعليمية، نسهل عليك خطوات الدراسة في الخارج، بدايةً من اختيار
+                الوجهة المناسبة وصولاً إلى التخرج والحصول على الشهادة المعتمدة،
+                نرافقك خطوة بخطوة، مدفوعين بشغفنا في رؤية جيل واعد من القادة
+                والمبدعين.
               </p>
               <ul>
                 <li>نرافقك حتى التخرج والحصول على الشهادة</li>
@@ -702,9 +709,9 @@
             </div>
           </div>
           <div>
-            <div class="relative">
+            <div class="" data-animate data-animation-direction="end">
               <div
-                class="bg-primary flex-center relative mb-4 lg:absolute lg:top-6 lg:inset-e-0 2xl:translate-x-1/2 2xl:ltr:-translate-x-1/2 z-10 px-6 py-4 gap-5 text-natural-25 rounded-[10px] overflow-hidden"
+                class="bg-primary flex-center relative mb-4 lg:absolute lg:top-6 inset-e-0 z-10 px-6 py-4 gap-5 text-natural-25 rounded-[10px] overflow-hidden"
               >
                 <div class="three-line-decore absolute bottom-0 -inset-e-2">
                   <span></span>
@@ -722,15 +729,15 @@
                 />
                 <div>
                   <h3 class="text-xl font-medium">طالب خريج</h3>
-                  <span class="counter text-[28px] font-bold" dir="ltr">
-                    + 1931</span
+                  <span class="text-[28px] font-bold counter" dir="ltr"
+                    >+1931</span
                   >
                 </div>
               </div>
               <img
                 src="../../assets/images/about/about-big-image.webp"
                 alt="من نحن "
-                class="object-cover rounded-[20px]"
+                class="object-cover rounded-[20px] w-full lg:w-auto"
                 width="548"
                 height="365"
                 loading="lazy"
@@ -738,7 +745,7 @@
               />
               <div class="flex">
                 <div
-                  class="rounded-[20px] border-10 border-natural-25 -mt-[100px] lg:-mt-[175px] lg:-ms-12 overflow-hidden relative w-fit"
+                  class="rounded-[20px] border-10 border-natural-25 -mt-25 lg:-mt-43.75 lg:-ms-12 overflow-hidden relative w-fit"
                 >
                   <img
                     src="../../assets/images/about/about-small-image.webp"
@@ -762,7 +769,7 @@
                     loading="lazy"
                     decoding="async"
                   />
-                  <p>طالب مقيد <span class="counter" dir="ltr">+1000</span></p>
+                  <p>طالب مقيد <span dir="ltr" class="counter">+1000</span></p>
                 </div>
               </div>
             </div>
@@ -903,7 +910,7 @@
                 <span
                   class="text-lg lg:text-xl font-header font-medium line-clamp-1"
                 >
-                  كيف يمكنني اختيار البلد المناسب للدراسة؟
+                  هدفنا
                 </span>
                 <div class="faq-icon" aria-hidden="true">
                   <img
@@ -927,10 +934,11 @@
                     class="text-natural-700 text-base lg:text-[26px] leading-[41px] overflow-y-auto py-2"
                     style="max-height: 208px"
                   >
-                    يعتمد اختيار البلد على عدة عوامل منها: تكاليف الدراسة
-                    والمعيشة، جودة التعليم والجامعات المعتمدة، اللغة المستخدمة،
-                    فرص العمل بعد التخرج، والثقافة والبيئة المحيطة. ننصح
-                    بالتواصل مع مستشارينا للحصول على توجيه مخصص.
+                    نهدف إلى أن نكون القوة الدافعة وراء تحقيق أحلام الطلاب العرب
+                    في التعليم العالي، من خلال بناء جسر يربطهم بأرقى المؤسسات
+                    الأكاديمية عالميًا، فرؤيتنا تتمثل في تمكين الشباب العربي من
+                    استكشاف إمكانياتهم الكامنة وتطوير مهاراتهم ليصبحوا قادة
+                    المستقبل.
                   </p>
                 </div>
               </div>
@@ -951,7 +959,7 @@
                 <span
                   class="text-lg lg:text-xl font-header font-medium line-clamp-1"
                 >
-                  كيف يمكنني اختيار البلد المناسب للدراسة؟
+                  رسالتنا
                 </span>
                 <div class="faq-icon" aria-hidden="true">
                   <img
@@ -975,10 +983,11 @@
                     class="text-natural-700 text-base lg:text-[26px] leading-[41px] overflow-y-auto py-2"
                     style="max-height: 208px"
                   >
-                    يعتمد اختيار البلد على عدة عوامل منها: تكاليف الدراسة
-                    والمعيشة، جودة التعليم والجامعات المعتمدة، اللغة المستخدمة،
-                    فرص العمل بعد التخرج، والثقافة والبيئة المحيطة. ننصح
-                    بالتواصل مع مستشارينا للحصول على توجيه مخصص.
+                    تتجاوز مهمتنا مجرد تقديم الاستشارات الأكاديمية، فنحن هنا
+                    لنجعل حلمك واقعًا ملموسًا، نمنحك الفرصة للوصول لأفضل الوجهات
+                    التعليمية، نمهد لك الطريق للنجاح في بيئة تعليمية مليئة
+                    بالفرص والتحديات، نوفر لك كافة الأدوات لتكتشف إمكاناتك
+                    الحقيقية.
                   </p>
                 </div>
               </div>
