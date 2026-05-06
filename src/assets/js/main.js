@@ -256,13 +256,13 @@ function setSidenavState(e) {
     ? (t.classList.remove("invisible"),
       o.classList.remove("opacity-0"),
       o.classList.add("opacity-100"),
-      n.classList.remove("translate-x-full", "ltr:-translate-x-full!"),
+      n.classList.remove("translate-x-full", "ltr:-translate-x-full"),
       n.classList.add("translate-x-0"),
       (document.body.style.overflow = "hidden"))
     : (o.classList.remove("opacity-100"),
       o.classList.add("opacity-0"),
       n.classList.remove("translate-x-0"),
-      n.classList.add("translate-x-full", "ltr:-translate-x-full!"),
+      n.classList.add("translate-x-full", "ltr:-translate-x-full"),
       setTimeout(() => {
         (t.classList.add("invisible"), (document.body.style.overflow = ""));
       }, 300));

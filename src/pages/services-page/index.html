@@ -31,176 +31,178 @@
   <body class="bg-natural-25 font-main">
     <header class="fixed top-0 left-0 w-full z-50 header-font font-medium">
       <div
-        class="bg-primary z-10 relative px-6 lg:px-15.5 py-4 flex items-center justify-between mx-auto shadow-lg transition-all duration-300 hover:shadow-xl"
+        class="bg-primary z-10 relative py-4 shadow-lg transition-all duration-300 hover:shadow-xl"
       >
-        <button
-          id="mobile-menu-toggle"
-          class="[@media(min-width:83.8125rem)]:hidden text-natural-25 p-2"
-          aria-label="Toggle Menu"
-        >
-          <div class="flex flex-col gap-1">
-            <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
-            <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
-            <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
-          </div>
-        </button>
-        <a href="./index.html">
-          <img
-            src="../../assets/images/shared/main-logo.png"
-            width="56"
-            height="56"
-            fetchpriority="low"
-            decoding="async"
-            alt="Logo"
-          />
-        </a>
-        <nav class="hidden [@media(min-width:83.8125rem)]:block">
-          <ul
-            class="[@media(min-width:83.8125rem)]:flex items-center gap-9.25 text-natural-25 text-lg"
+        <div class="container flex items-center justify-between">
+          <button
+            id="mobile-menu-toggle"
+            class="[@media(min-width:83.8125rem)]:hidden text-natural-25 p-2"
+            aria-label="Toggle Menu"
           >
-            <li>
-              <a
-                href="../about-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >من نحن</a
-              >
-            </li>
-            <li>
-              <a
-                href="../vision-2030-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >الخدمات</a
-              >
-            </li>
-            <li>
-              <a
-                href="../vision-2030-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >المقالات</a
-              >
-            </li>
-            <li>
-              <a
-                href="../vision-2030-page/index.html"
-                class="hover:text-natural-25/70 transition-colors"
-                >المعرض</a
-              >
-            </li>
-            <li
-              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
-              data-dropdown-trigger="upgrade-yourself"
-            >
-              <span>خطوات الدراسة في الخارج</span>
-              <img
-                src="../../assets/images/shared/icons/chevron-down-white.svg"
-                width="16"
-                height="16"
-                loading="lazy"
-                decoding="async"
-                alt="Chevron"
-                class="w-4 h-4 transition-transform duration-300"
-              />
-              <div
-                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
-              >
-                <ul
-                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
-                >
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >تحديد ميزانية الدراسة</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >تحديد الوجهة الدراسية</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
-              data-dropdown-trigger="upgrade-yourself"
-            >
-              <span>المنح الدراسية</span>
-              <img
-                src="../../assets/images/shared/icons/chevron-down-white.svg"
-                width="16"
-                height="16"
-                decoding="async"
-                fetchpriority="low"
-                alt="Chevron"
-                class="w-4 h-4 transition-transform duration-300"
-              />
-              <div
-                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
-              >
-                <ul
-                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
-                >
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >المنح الدراسية في الأردن</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
-              data-dropdown-trigger="upgrade-yourself"
-            >
-              <span>اختبارات اللغة</span>
-              <img
-                src="../../assets/images/shared/icons/chevron-down-white.svg"
-                width="16"
-                height="16"
-                decoding="async"
-                fetchpriority="low"
-                alt="Chevron"
-                class="w-4 h-4 transition-transform duration-300"
-              />
-              <div
-                class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
-              >
-                <ul
-                  class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
-                >
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >اختبار آيلتس</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >اختبار التوفل</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-
-        <a
-          href="#"
-          class="bg-natural-25 hover:bg-natural-25/80 text-blue-600 px-4 py-2.5 rounded-[10px] text-xl flex items-center gap-4 group transition-colors"
-        >
-          اتصل بنا
-          <span
-            class="transform group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform ltr:scale-x-[-1]"
-          >
+            <div class="flex flex-col gap-1">
+              <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
+              <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
+              <span class="h-0.75 w-5 bg-natural-25 rounded-full"></span>
+            </div>
+          </button>
+          <a href="./index.html">
             <img
-              src="../../assets/images/shared/icons/arrow-cta.svg"
-              width="20"
-              height="20"
-              decoding="async"
+              src="../../assets/images/shared/main-logo.png"
+              width="56"
+              height="56"
               fetchpriority="low"
-              alt="Arrow"
+              decoding="async"
+              alt="Logo"
             />
-          </span>
-        </a>
+          </a>
+          <nav class="hidden [@media(min-width:83.8125rem)]:block">
+            <ul
+              class="[@media(min-width:83.8125rem)]:flex items-center gap-9.25 text-natural-25 text-lg"
+            >
+              <li>
+                <a
+                  href="../about-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >الخدمات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../blogs-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >المقالات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../gallery-page/index.html"
+                  class="hover:text-natural-25/70 transition-colors"
+                  >المعرض</a
+                >
+              </li>
+              <li
+                class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+                data-dropdown-trigger="upgrade-yourself"
+              >
+                <span>خطوات الدراسة في الخارج</span>
+                <img
+                  src="../../assets/images/shared/icons/chevron-down-white.svg"
+                  width="16"
+                  height="16"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Chevron"
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+                <div
+                  class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+                >
+                  <ul
+                    class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                  >
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >تحديد ميزانية الدراسة</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >تحديد الوجهة الدراسية</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+                data-dropdown-trigger="upgrade-yourself"
+              >
+                <span>المنح الدراسية</span>
+                <img
+                  src="../../assets/images/shared/icons/chevron-down-white.svg"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  fetchpriority="low"
+                  alt="Chevron"
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+                <div
+                  class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+                >
+                  <ul
+                    class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                  >
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >المنح الدراسية في الأردن</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="relative group/dropdown flex items-center gap-1 cursor-pointer hover:text-natural-25/70 transition-colors py-2"
+                data-dropdown-trigger="upgrade-yourself"
+              >
+                <span>اختبارات اللغة</span>
+                <img
+                  src="../../assets/images/shared/icons/chevron-down-white.svg"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  fetchpriority="low"
+                  alt="Chevron"
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+                <div
+                  class="dropdown-menu absolute top-full inset-s-0 mt-4 w-64 bg-natural-25 rounded-[9px] shadow-[0_1px_64px _0_#0000000D] px-4 opacity-0 invisible translate-y-4 transition-all duration-300 z-50"
+                >
+                  <ul
+                    class="flex flex-col text-natural-900 [&_li_a]:block [&_li_a]:py-3 divide-natural-75 divide-y"
+                  >
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >اختبار آيلتس</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="hover:text-primary transition-colors"
+                        >اختبار التوفل</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+
+          <a
+            href="../contact-us/index.html"
+            class="bg-natural-25 hover:bg-natural-25/80 text-blue-600 px-4 py-2.5 rounded-[10px] text-xl flex items-center gap-4 group transition-colors"
+          >
+            تواصل معنا
+            <span
+              class="transform group-hover:-translate-x-1 ltr:group-hover:translate-x-1 transition-transform ltr:scale-x-[-1]"
+            >
+              <img
+                src="../../assets/images/shared/icons/arrow-cta.svg"
+                width="20"
+                height="20"
+                decoding="async"
+                fetchpriority="low"
+                alt="Arrow"
+              />
+            </span>
+          </a>
+        </div>
       </div>
 
       <div
@@ -476,27 +478,21 @@
                 >
                   <li>
                     <a href="#" class="hover:text-primary transition-colors"
-                      >التعلم عن بعد</a
+                      >الدراسه عن بعد</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >ريادة الاعمال</a
+                    <a
+                      href="../verified-university/index.html"
+                      class="hover:text-primary transition-colors"
+                      >التسجيل في الجامعات</a
                     >
                   </li>
                   <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >احصل علي نصيحه</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >المناسابات الرسميه و الاجازات</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="hover:text-primary transition-colors"
-                      >ابحث عن وظيفة</a
+                    <a
+                      href="../certificate-page/index.html"
+                      class="hover:text-primary transition-colors"
+                      >شهادات القبول</a
                     >
                   </li>
                 </ul>
@@ -557,6 +553,8 @@
       <div class="container">
         <div class="flex items-center justify-between">
           <div
+            data-animate
+            data-animation-direction="start"
             class="section-header text-natural-900 w-fit items-start! text-center lg:text-start"
           >
             <img
@@ -571,21 +569,19 @@
               class="mt-4"
             />
             <div>
-              <h2 class="text-10">الصور والفيديوهات</h2>
+              <h2 class="text-10">جميع الخدمات</h2>
             </div>
           </div>
-          <a
-            href="#"
-            class="bg-blue-500 hover:bg-blue-500/80 transition-colors duration-300 text-natural-25 rounded-[10px] py-2.5 px-8"
-          >
-            اعرف اكثر
-          </a>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-7.5 mt-6">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-7.5 mt-6"
+          data-animate
+          data-animation-direction="start"
+        >
           <article role="group">
             <a
               href="#"
-              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6"
+              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6 overflow-hidden"
             >
               <div
                 class="three-line-decore absolute bottom-2 -inset-e-2 [&amp;_span]:bg-natural-100"
@@ -648,7 +644,7 @@
           <article role="group">
             <a
               href="#"
-              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6"
+              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6 overflow-hidden"
             >
               <div
                 class="three-line-decore absolute bottom-2 -inset-e-2 [&amp;_span]:bg-natural-100"
@@ -711,7 +707,7 @@
           <article role="group">
             <a
               href="#"
-              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6"
+              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6 overflow-hidden"
             >
               <div
                 class="three-line-decore absolute bottom-2 -inset-e-2 [&amp;_span]:bg-natural-100"
@@ -774,7 +770,7 @@
           <article role="group">
             <a
               href="#"
-              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6"
+              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6 overflow-hidden"
             >
               <div
                 class="three-line-decore absolute bottom-2 -inset-e-2 [&amp;_span]:bg-natural-100"
@@ -837,7 +833,7 @@
           <article role="group">
             <a
               href="#"
-              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6"
+              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6 overflow-hidden"
             >
               <div
                 class="three-line-decore absolute bottom-2 -inset-e-2 [&amp;_span]:bg-natural-100"
@@ -900,7 +896,7 @@
           <article role="group">
             <a
               href="#"
-              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6"
+              class="block h-full group shadow-[0_4px_17px_0_#00000005] relative rounded-[10px] bg-natural-25 py-4 px-6 overflow-hidden"
             >
               <div
                 class="three-line-decore absolute bottom-2 -inset-e-2 [&amp;_span]:bg-natural-100"
@@ -1155,7 +1151,6 @@
     </div>
     <div
       id="register-btn"
-      
       dir="rtl"
       class="fixed flex items-center hover:opacity-90 transition-opacity duration-300 right-0 bottom-[134px] z-20 gap-2 py-2 px-4 rounded-e-full bg-natural-25/15"
     >
@@ -1165,7 +1160,10 @@
       >
         سجل من هنا
       </a>
-      <button class="bg-[#E6B62633] size-18 rounded-full flex-center" id="registerToggleBtn">
+      <button
+        class="bg-[#E6B62633] size-18 rounded-full flex-center"
+        id="registerToggleBtn"
+      >
         <div class="bg-[#E6B62680] size-14 rounded-full flex-center">
           <div class="bg-secondary size-10 rounded-full flex-center">
             <img

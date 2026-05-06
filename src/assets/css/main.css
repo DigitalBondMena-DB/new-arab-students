@@ -216,4 +216,16 @@ h6 {
       transform: translate(6px, -5px);
     }
   }
+  [dir="ltr"] .three-line-decore {
+    rotate: 135deg;
+    span:nth-child(1) {
+      transform: translate(-15px, 6px);
+    }
+    span:nth-child(2) {
+      transform: translate(-10px, 0px);
+    }
+    span:nth-child(3) {
+      transform: translate(-6px, -5px);
+    }
+  }
 }
