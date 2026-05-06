@@ -87,34 +87,48 @@ function initSidebarThemeObserver() {
   const registerBtn = document.getElementById("register-btn");
   const heroSection = document.querySelector(".hero-section");
 
-  if (!heroSection) return;
+  if (!heroSection || !registerBtn) return;
 
-  new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (registerBtn) {
-            registerBtn.classList.remove("scrolled");
-            const p = registerBtn.querySelector("p");
-            if (p) {
-              p.classList.add("text-natural-25");
-              p.classList.remove("text-natural-900");
-            }
-          }
-        } else {
-          if (registerBtn) {
-            registerBtn.classList.add("scrolled");
-            const p = registerBtn.querySelector("p");
-            if (p) {
-              p.classList.remove("text-natural-25");
-              p.classList.add("text-natural-900");
-            }
-          }
-        }
-      });
-    },
-    { threshold: 0.5, rootMargin: "0px 0px 0px 0px" },
-  ).observe(heroSection);
+  const updateTheme = () => {
+    const heroRect = heroSection.getBoundingClientRect();
+    const btnRect = registerBtn.getBoundingClientRect();
+
+    // Check if the button intersects with the hero section
+    // We consider it "scrolled" if it's no longer overlapping with the hero
+    const isOverlapping =
+      btnRect.top < heroRect.bottom && btnRect.bottom > heroRect.top;
+
+    const link = registerBtn.querySelector("a");
+
+    if (isOverlapping) {
+      registerBtn.classList.remove("scrolled");
+      if (link) {
+        link.classList.add("text-natural-25");
+        link.classList.remove("text-natural-900");
+      }
+    } else {
+      registerBtn.classList.add("scrolled");
+      if (link) {
+        link.classList.remove("text-natural-25");
+        link.classList.add("text-natural-900");
+      }
+    }
+  };
+
+  // Using IntersectionObserver as a trigger for scroll/resize updates
+  // with multiple thresholds to ensure the check runs frequently enough
+  const observer = new IntersectionObserver(updateTheme, {
+    threshold: Array.from({ length: 21 }, (_, i) => i / 20),
+  });
+
+  observer.observe(heroSection);
+
+  // Also fallback to scroll/resize for absolute certainty
+  window.addEventListener("scroll", updateTheme, { passive: true });
+  window.addEventListener("resize", updateTheme, { passive: true });
+
+  // Initial check
+  updateTheme();
 }
 function handleRegisterBtnInteraction() {
   const registerBtn = document.getElementById("register-btn");
